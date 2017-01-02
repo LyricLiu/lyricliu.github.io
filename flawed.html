@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <title>Lyric Liu - Flawed Magic</title>
+    <link rel="stylesheet" type="text/css" href="./style/page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="left">
+            <div id="left-text">
+                <h1>Flawed Magic</h1>
+                <div id="line"></div>
+                <p>Interactive Storytelling. A fairy tale in Witch world.</p>
+                <h4>Personal Work in a Shared Storyworld</h4>
+                <span>11/2016</span>
+            </div>
+        </div>
+        <div id="right">
+            <img src="./img/page/flawed1.png">
+            <div class="para">
+                <h2>Introduction</h2>
+                <div class="line1"></div>
+                <p><span>Flawed Magic</span> is an interactive storytelling where you control every action of the character (Petra) and shape your own unique story . The story begin by an adoptee Petra who is passionate for Witchcraft but constantly barred from his Witch mother for some past reasons. As he falls in love with a Princess Hedda, he has to use his flawed magic to solve a string of problems caused by intertwined relationship between their families.</p>
+                <p>Here is a brief game play video:</p>
+            </div>
+            <div id="video">
+                <div id="play-button"></div>
+                <img src="./img/page/flawed-video.png" id="videoPic">
+                <iframe width="980" height="484" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="para">
+                <h2>Dramatic Agency</h2>
+                <div class="line1"></div>
+                <p>I give the player dramatic agency through offering dramatic way of decision making. As the whole story is set in a witch world, I incorporate a lot of witch stuff when the player make choices.</p>
+                <p>For example, when the story goes to the situation that you sneak into the witch's workshop, I display several wichery ingredients for you to brew a magic portion. The princess's first impression of you will depend on what you make here.</p>
+            </div>
+            <img src="./img/page/flawed2.png">
+            <div class="para">
+                <h2>Unfairness</h2>
+                <div class="line1"></div>
+                <p>One rule in my story is unfairness as your flawed magic always leads to unexpected outcomes.</p>
+                <p>For instance, you perform magic to turn yourself into a bird and carry Hedda down from the tower. But your magic expires, and you two fall down. You hurt yourself, but you catch Hedda, and she kisses you. So your flawed magic is actually rewarded. Reversely, when you make a bonfire to please Hedda with your magic, you end up burning her dress and making her angry. </p>
+            </div>
+            <img src="./img/page/flawed3.png">
+            <div class="para">
+                <h2>Multisequential Narrative</h2>
+                <div class="line1"></div>
+                <p>I adopted an unsequential storytelling to enrich my storyworld. The player will uncover some past stories which affect the later decision making.</p>
+                <p>In day 3, for instance, you will uncover your mom's past relationship in a secret room through the love letter and the missing magic stone.</p>
+            </div>
+            <img src="./img/page/flawed4.png">
+            <div class="para">
+                <p>In this way, my story reflects the whole storyworld by sharing the history of the Mad King.</p>
+            </div>
+            <img src="./img/page/flawed6.png">
+            <div class="para">
+                <h2>Story Endings</h2>
+                <div class="line1"></div>
+                <p>The ending of the story is based on your score which is determined by each of your choice. The best ending is that the Mad King's wicked magic is broken. His curse is broken as well. You come back to life through the bracelet magic which is activated by Hedda's teardrops. Your witch mom admits your relationship with Hedda. You and Hedda live happily ever after.</p>
+            </div>
+            <div class="para">
+                <h2>Selected UI</h2>
+                <div class="line1"></div>
+            </div>
+            <img src="./img/page/flawed8.png">
+            <div class="para">
+                <h2>MadKing Storyworld</h2>
+                <div class="line1"></div>
+                <p>My story <span>Flawed Magic</span> is the second story in MadKing's storyworld sequence. In the Storyworld, the fairy tale kingdom of Lordaeron is ruled by a paranoid and irritable magical king--The Mad King Ludwig.</p>
+                <p>There are four stories in MadKing's storyworld. The stories all take place in the kingdom of Lordaeron. Lordaeron is an ancient kingdom with a medieval fairy tale aesthetic.</p>
+                <p>Below is the brief introduction of each story. (I am the illustrator for all four stories)</p>
+            </div>
+            <img src="./img/page/flawed5.png">
+            <div class="para">
+                <p><label>The Castle of the Mad King</label> : An architect named Ms. Hoffman is stolen away and brought to the Mad King’s castle to help him renovate his castle. She soon realizes that she’s become ensnared in an insidious plot to overthrow the King.</p>
+                <p><label>Flawed Magic</label> : An adoptee Petra is passionate for Witchcraft but constantly barred from his Witch mother for some past reasons. As he falls in love with a Princess Hedda, he has to use his flawed magic to solve a string of problems caused by intertwined relationship between their families. </p>
+                <p><label>A Mad Murder</label> : During the festival celebrating the completion of the King’s castle, a man by the name of Gherman Jakobson is blamed for murder. Using his wits and deductive reasoning, Gherman must find evidence to both clear his name and find the real killer.</p>
+                <p><label>A Thief’s Mad Task</label> : A plague has hit the poor district of the kingdom. Charismatic thief Leopold has decided to save the people, especially his sick mother, by stealing a magical healing artifact from the king’s castle. He must navigate the castle and steal the artifact in time to save his mother and the low class citizens of Lordaeron.</p>
+                <p>Below is the relationship diagram of the MadKing's storyworld.</p>
+            </div>
+            <img src="./img/page/flawed7.png">
+            <div class="para">
+                <h2>Installation Instruction</h2>
+                <div class="line1"></div>
+                <p>Open the Link in a browser &nbsp;<a href="https://lyricliu.github.io/MadKing/"> https://lyricliu.github.io/MadKing/</a>&nbsp;</p>
+                <p>Mobile devices are not supported.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        function adjust() {
+            $("img").width($("#right").width());
+            $("iframe").width($("#right").width());
+            $("iframe").height(($("#right").width()) * 551 / 980);
+        }
+        window.onload = function() {
+            window.onresize = adjust;
+            adjust();
+        }
+    });
+
+    $('#play-button').click(function() {
+        $('#videoPic').hide();
+        $('#play-button').hide();
+        $('iframe').show();
+        $('iframe').attr("src", "https://player.vimeo.com/video/195315835?autoplay=1&title=0&byline=0&portrait=0");
+    });
+    </script>
+    <script src="https://use.typekit.net/fwz5ooq.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
+</body>
+
+</html>

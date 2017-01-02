@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>Lyric Liu - Superhero</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./style/page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="left">
+            <div id="left-text">
+                <h1>Superheroes Around theWorld</h1>
+                <div id="line"></div>
+                <p>Twitter data mining and visualization.</p>
+                <h4>Personal Work</h4>
+                <span>10/2016</span>
+            </div>
+        </div>
+        <div id="right">
+            <img src="./img/page/superhero1.png">
+            <div class="para">
+                <h2>Introduction</h2>
+                <div class="line1"></div>
+                <p><span>Superheroes</span> around the World is a data visualization online webpage which aims to visualize stream twitter data about superheroes including Super Man, Spider Man, Black Widow, Captain America, Bat Man, Wonder Woman, Thor and Iron Man. This project mines the tweets geolocations of each hero and visualizes them on a 3D earth model. It also displays the number of tweets that has received and the contents of tweets. Based on the character settings, each hero is represented by one color. Each piece of data displayed is color coded.</p>
+                <p>This project is more like a tool for those who want to analysis superhero data.</p>
+            </div>
+            <div id="video">
+                <div id="play-button"></div>
+                <img src="./img/page/superhero2.png" id="videoPic">
+                <iframe width="980" height="551" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="para">
+                <h2>User Interface</h2>
+                <div class="line1"></div>
+            </div>
+            <img src="./img/page/superhero3.png">
+            <div class="para">
+                <h2>Technology</h2>
+                <div class="line1"></div>
+                <p>HTML/CSS &nbsp;&nbsp; JavaScript &nbsp;&nbsp; jQuery &nbsp;&nbsp; node.js &nbsp;&nbsp; Planetary.js &nbsp;&nbsp; D3.js &nbsp;&nbsp; Twitter Stream API &nbsp;&nbsp; Google Map API</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        function adjust() {
+            $("img").width($("#right").width());
+            $("iframe").width($("#right").width());
+            $("iframe").height(($("#right").width()) * 551 / 980);
+        }
+        window.onload = function() {
+            window.onresize = adjust;
+            adjust();
+        }
+    });
+
+    $('#play-button').click(function() {
+        $('#videoPic').hide();
+        $('#play-button').hide();
+        $('iframe').show();
+        $('iframe').attr("src", "https://player.vimeo.com/video/197726381?autoplay=1&title=0&byline=0&portrait=0");
+    });
+    </script>
+    <script src="https://use.typekit.net/fwz5ooq.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
+</body>
+
+</html>

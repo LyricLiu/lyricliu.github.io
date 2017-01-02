@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Lyric Liu - CosmosKiller</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./style/page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="left">
+            <div id="left-text">
+                <h1>Cosmos Killer</h1>
+                <div id="line"></div>
+                <p>Cosmos-themed bouncing ball mobile game.</p>
+                <h4>Role: Visual Design, UI / UX</h4>
+                <span>11/2014</span>
+            </div>
+        </div>
+        <div id="right">
+            <img src="./img/page/cosmos1.png">
+            <div class="para">
+                <h2>Introduction</h2>
+                <div class="line1"></div>
+                <p><span>CosmosKiller</span> is a cosmos-themed mobile game. The player enters into a cosmic space, acts as the evil robot killer, controls the spacecraft via Energy Ray, in an attempt to conquer planets in the universe.</p>
+            </div>
+            <div class="para">
+                <h2>Game Play</h2>
+                <div class="line1"></div>
+                <p>The player manupulates the weapon rocket to hit the targets through drawing an energy ray to rebound it.</p>
+            </div>
+            <img src="./img/page/cosmos2.png">
+            <div class="para">
+                <h2>Targets</h2>
+                <div class="line1"></div>
+                <p>The main targets in this game are plants appeared randomly on screen.</p>
+                <p>Other targets has some special functions. For example, the Power Source can improve the attack ability of the player's weapon. </p>
+                <p>Besides, the player can collect Star Coins to purchase goods in the CosmosShop.</p>
+            </div>
+            <img src="./img/page/cosmos3.png">
+            <div class="para">
+                <h2>Obstacles</h2>
+                <div class="line1"></div>
+                <p>This game has two obstacles. The main obstacle is the Intelligent Elfin which is haunted around the screen. Once the player's weapon touches the Elfin, the game is over.</p>
+                <p>Another obstacle is the limitation of energy for player to draw the Energy Ray. Initially, the player has 10 points energy. Each time, the player is allowed to consume 2 point energy at most to construct Energy Ray. (Later, 1 point energy can be restored every 6 seconds). </p>
+            </div>
+            <img src="./img/page/cosmos4.png">
+            <div class="para">
+                <h2>Cosmos Shop</h2>
+                <div class="line1"></div>
+                <p>Cosmos shop is provided for the player to buy new weapons with star coins collected in the game.</p>
+            </div>
+            <img src="./img/page/cosmos5.png">
+            <div class="para">
+                <h2>User Interface</h2>
+                <div class="line1"></div>
+            </div>
+            <img src="./img/page/cosmos6.png">
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        function adjust() {
+            $("img").width($("#right").width());
+            $("iframe").width($("#right").width());
+            $("iframe").height(($("#right").width()) * 551 / 980);
+        }
+        window.onload = function() {
+            window.onresize = adjust;
+            adjust();
+        }
+    });
+    </script>
+    <script src="https://use.typekit.net/fwz5ooq.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1em;
+    line-height: 1.6em;
+    margin:10px 0px 10px 0px;
+}
+
+span {
+    font-family: brandon-grotesque, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1em;
+    color:#5f576e;
+}
+
+h1 {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4em;
+    margin:20px 0 20px 0;
+    color:#5f576e;
+}
+
+h2{
+	font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.5em;
+    margin:10px 0 10px 0;
+    color:#7c8296;
+}
+
+h4 {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1em;
+    color:#5f576e;
+    margin-bottom: 20px;
+}
+
+li{
+	list-style: disc;
+}
+
+label{
+	font-family: futura-pt, sans-serif;
+	font-weight: 500;
+}
+#line{
+	width:70px;
+	height:3px;
+	background-color: #181e31;
+}
+
+.line1{
+	width:70px;
+	height:3px;
+	background-color: #c3c5ce;
+}
+
+.para{
+	padding:20px 10px 20px 10px;
+}
+
+iframe{
+	display: none;
+}
+
+#video{
+	position: relative;
+	overflow: hidden;
+}
+
+#play-button{
+	background: url(../img/page/play.png);
+    width: 174px;
+    height: 101px;
+    position: absolute;
+    left: calc(50% - 87px);
+    top: calc(50% - 50px);
+    z-index: 999;
+    transition: all .3s ease-in-out;
+}
+
+#play-button:hover{
+	background: url(../img/page/play1.png);
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 1023px) {
+  	#left{
+		height:240px;
+		margin-left:40px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+	#wrap{
+		width:100%;
+	}
+	
+	#left{
+		position: fixed;
+		width:340px;
+		height:500px;
+		top:30px;
+		left:0;
+	}
+
+	#right{
+		width:calc(100% - 460px);
+		position: relative;
+		left:400px;
+	}
+
+	#left-text{
+		margin:60px;
+		margin-top: 30px;
+	}
+
+}
+
+@media (min-width: 1441px) {
+  	#wrap{
+		width:1440px;
+		position: relative;
+		left:calc(50% - 720px);
+	}
+
+	#left{
+		position: fixed;
+		width:340px;
+		height:500px;
+		top:30px;
+		left:0;
+	}
+
+	#right{
+		width:980px;
+		position: relative;
+		left:400px;
+	}
+
+	#left-text{
+		margin:60px;
+		margin-top: 30px;
+	}
+}
+
+

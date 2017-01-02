@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Lyric Liu - Tea Table</title>
+    <link rel="stylesheet" type="text/css" href="./style/page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="left">
+            <div id="left-text">
+                <h1>Tea Table</h1>
+                <div id="line"></div>
+                <p>Interactive Storytelling. A drama about tea culture.</p>
+                <h4>Personal Work</h4>
+                <span>09/2016</span>
+            </div>
+        </div>
+        <div id="right">
+            <img src="./img/page/tea1.png">
+            <div class="para">
+                <h2>Introduction</h2>
+                <div class="line1"></div>
+                <p><span>Tea Table</span> is an interactive story about tea culture with the background of 18th century China. </p>
+                <p>The player acts as a tea shop owner and serves the guests from all over the world. While going through the tea brewing process, the player will learn eastern tea culture and hear some interesting stories from the guests. </p>
+            </div>
+            <div class="para">
+                <h2>Idea of <span>Tea Table</span></h2>
+                <div class="line1"></div>
+                <p>How we simulate real life experience through interactive narrative? How we create a sense of space through computer interface? How we learn a culture from inside?</p>
+                <p>I had speculated these questions before I came up with this tea table idea. Unlike virtual reality devices which simulate and recreate real-life experience, personal computer or mobile device is inferior in rendering a real sense of space. Computer-generated content when layered atop an existing stationary reality object makes it more expectable for users to interact with. When my narrative situates in a daily used table, the whole interactive space is turn into a real life social sphere. And each interaction with narrative contents mirrors the way you communicate with people at the tea table.</p>
+                <p>Sharing tea is a specific way for Chinese people to socialization. Thus, gaining tea knowledge in the context of tea table conversation is the best way to experience tea culture. Through this project, I’d like to introduce a way to experience a culture from the inside and gain knowledge from participation.</p>
+            </div>
+
+            <div class="para">
+                <h2>Selected UI</h2>
+                <div class="line1"></div>
+            </div>
+            <img src="./img/page/tea2.png">
+            <div class="para">
+                <h2>Installation Instruction</h2>
+                <div class="line1"></div>
+                <p>Open the Link in a browser &nbsp;<a href="https://lyricliu.github.io/teatableweb/"> https://lyricliu.github.io/teatableweb/</a>&nbsp;</p>
+                <p>Mobile devices are not supported.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        function adjust() {
+            $("img").width($("#right").width());
+            $("iframe").width($("#right").width());
+            $("iframe").height(($("#right").width()) * 551 / 980);
+        }
+        window.onload = function() {
+            window.onresize = adjust;
+            adjust();
+        }
+    });
+    </script>
+    <script src="https://use.typekit.net/fwz5ooq.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
+</body>
+
+</html>

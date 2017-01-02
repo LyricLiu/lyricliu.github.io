@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>Lyric Liu - Halloween Haunters</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./style/page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="left">
+            <div id="left-text">
+                <h1>Halloween Haunters</h1>
+                <div id="line"></div>
+                <p>Geolocation Based AR Mobile Game of Halloween Ghost Collection.</p>
+                <h4>Personal Work</h4>
+                <span>11/2016</span>
+            </div>
+        </div>
+        <div id="right">
+            <img src="./img/page/halloween1.png">
+            <div class="para">
+                <h2>Introduction</h2>
+                <div class="line1"></div>
+                <p><span>Halloween Haunters</span> is a Location based AR game in which users hunt characters in real-world locations using smartphones. In the game, Witches, Skeletons, Ghosts, Vampires and Zombies – all these horror supernatural beings are haunting around Georgia Tech campus, and your job is to find and capture them.</p>
+                <p>This game was launched just before 2016 Halloween to provide a unique Halloween experience for students in Georgia Tech.</p>
+                <p>Check the short video below:</p>
+            </div>
+            <div id="video">
+                <div id="play-button"></div>
+                <img src="./img/page/video.png" id="videoPic">
+                <iframe width="980" height="551" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="para">
+                <h2>Game Characters</h2>
+                <div class="line1"></div>
+                <p>I chose blocky pixel art for my 3D characters, for I want players to feel visually in a digital world when playing this game instead of being disappointed by fake reality characters. As <span>Jason Rohrer</span>'s idea that pixel art is a kind of digitally native cartooning, my AR game tries to intervene into reality through digital characters and create a more appealing digital gaming experience in real life.</p>
+                <p>Here are characters and items in my game:</p>
+            </div>
+            <img src="./img/page/halloween2.png">
+            <div class="para">
+                <h2>Game Map</h2>
+                <div class="line1"></div>
+                <p>The game map is converted from real world Georgia Tech map. I distributed characters around the map and visualized their locations by shining yellow dots. The color of the dot will turn green after the corresponding character is captured. And new characters unlocked will be displayed by position icons.</p>
+            </div>
+            <img src="./img/page/halloween3.gif">
+            <div class="para">
+                <h2>User Interface</h2>
+                <div class="line1"></div>
+            </div>
+            <img src="./img/page/halloween4.gif">
+            <div class="para">
+                <h2>Technology</h2>
+                <div class="line1"></div>
+                <p>HTML/CSS &nbsp;&nbsp; JavaScript &nbsp;&nbsp; A-Frame &nbsp;&nbsp; Argon &nbsp;&nbsp; Local Storage &nbsp;&nbsp; Magical Voxel</p>
+            </div>
+            <div class="para">
+                <h2>Installation Instruction</h2>
+                <div class="line1"></div>
+                <p>- Download Argon from Apple Store. (Argon 4)</p>
+                <p>- Tap the link &nbsp;&nbsp;<span>https://lyricliu.github.io/Halloween/<span> &nbsp;&nbsp;in argon.</p>
+                <p>- Allow your position to be shared.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        function adjust() {
+            $("img").width($("#right").width());
+            $("iframe").width($("#right").width());
+            $("iframe").height(($("#right").width()) * 551 / 980);
+        }
+        window.onload = function() {
+            window.onresize = adjust;
+            adjust();
+        }
+    });
+
+    $('#play-button').click(function() {
+        $('#videoPic').hide();
+        $('#play-button').hide();
+        $('iframe').show();
+        $('iframe').attr("src", "https://player.vimeo.com/video/191107250?autoplay=1&title=0&byline=0&portrait=0");
+    });
+    </script>
+    <script src="https://use.typekit.net/fwz5ooq.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Lyric Liu - AR Memo</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./style/page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="left">
+            <div id="left-text">
+                <h1>AR Memo</h1>
+                <div id="line"></div>
+                <p>Ambient intelligent environment envision video.</p>
+                <h4>Personal Work</h4>
+                <span>10/2016</span>
+            </div>
+        </div>
+        <div id="right">
+            <div id="video">
+                <div id="play-button"></div>
+                <img src="./img/page/memo1.png" id="videoPic">
+                <iframe width="980" height="551" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="para">
+                <h2>Concept</h2>
+                <div class="line1"></div>
+                <p>My envision is based on a paper discussing an ambient intelligent environment design for accessing building information in facility management operations from Tech Report. Massed Gheisari, the author, built an Argon-based system which meets facility managers’ information requirement through displaying 3D building information models on top of the real-world view of the facility. Compared to traditional paper-based information approach, this Ambient Intelligent environment would help those workers perform each task easier and faster. As the report suggested, the system was located on mobile devices like smart phone and iPad.</p>
+                <p>Memo Life is an AR memo system with the intension of improving situation awareness through seamless integration of object data with the physical environment. Through wearing a special glass, one can easily access to the data attached to every designated physical object. The system stores, manipulates and displays the information through object recognition. The information comes from both user inputs and environment variation. The interaction can audio-based, visual-based as well as gesture-based. The ultimate goal of this system is to offer an ambient intelligent environment for people to interact.</p>
+                <p>The main function of Memo Life System: 1. Data storage, manipulation and display; 2. Object recognition; 3. Environment variation detection; 4. Real-time information sharing; 5. Upcoming events reminding; 6. Data analyzing</p>
+                <p>Sharing is a vital part of this memo. Users can share events and physical objects as well. For instance, roommates share a plant in their apartment and the statistics of that plant is accessed through all the roommates.</p>
+                <p>The critical part of this envision lies on the issue of digital disruption. This technology enhances our situation awareness; in the meanwhile, it intrudes into our ordinary life. One point that cannot be discarded is surveillance. As the memo is shared, your behaviors are potentially exposed to a group of people. Besides, the close proximity between you and the system enables junk information like advertisement to easily jumps into your eyes and disturbs your task. Furthermore, do we really need to “memo” our life? Do we really need to maintain clear awareness and exert absolute control over the environment we live in? Will this awareness cause unnecessary stress or information anxiety?</p>
+            </div>
+            <div class="para">
+                <h2>Screenshots</h2>
+                <div class="line1"></div>
+            </div>
+            <img src="./img/page/memo2.png">
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        function adjust() {
+            $("img").width($("#right").width());
+            $("iframe").width($("#right").width());
+            $("iframe").height(($("#right").width()) * 551 / 980);
+        }
+        window.onload = function() {
+            window.onresize = adjust;
+            adjust();
+        }
+    });
+
+    $('#play-button').click(function() {
+        $('#videoPic').hide();
+        $('#play-button').hide();
+        $('iframe').show();
+        $('iframe').attr("src", "https://player.vimeo.com/video/189816199?autoplay=1&title=0&byline=0&portrait=0");
+    });
+    </script>
+    <script src="https://use.typekit.net/fwz5ooq.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Lyric Liu - U-stay</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./style/page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="left">
+            <div id="left-text">
+                <h1>U-stay App</h1>
+                <div id="line"></div>
+                <p>Application prototyping. Creating more meaningful talks for couples.</p>
+                <h4>Role: Visual Design, UI / UX</h4>
+                <span>12/2014</span>
+            </div>
+        </div>
+        <div id="right">
+            <img src="./img/page/ustay1.png">
+            <div class="para">
+                <h2>Introduction</h2>
+                <div class="line1"></div>
+                <p>When you love someone, you want to be as connected to them as possible, espeacially in times when you are set miles apart for some reason. <span>U-stay</span> is a beautifully designed social network for couples to better connect with each other.</p>
+            </div>
+            <img src="./img/page/ustay2.png">
+            <div class="para">
+                <h2>Make Your Own Character</h2>
+                <div class="line1"></div>
+                <p>Customize your virtual character that would be displayed on your lover's device.</p>
+                <p>You are allowed to set your mood, your status and schedules to share.</p>
+            </div>
+            <img src="./img/page/ustay3.png">
+            <img src="./img/page/ustay4.png">
+            <div class="para">
+                <p>Certainly, you are able to view the character customized by your lover.</p>
+            </div>
+            <img src="./img/page/ustay5.png">
+            <div class="para">
+                <h2>Flowchart</h2>
+                <div class="line1"></div>
+            </div>
+            <img src="./img/page/ustay6.png">
+            <div class="para">
+                <p>Three main modules:</p>
+                <p><label>Him/Her module</label> : View virtual character of your lover including his/her weather, mood, schedule, etc.</p>
+                <p><label>Me module</label> : Customize your own character, change your mood, update your schedule, etc.</p>
+                <p><label>Us module</label> : Upload files for share. (Video, Text Message, Picture)</p>
+            </div>
+            <div class="para">
+                <h2>Selected UI</h2>
+                <div class="line1"></div>
+            </div>
+            <img src="./img/page/ustay7.png">
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        function adjust() {
+            $("img").width($("#right").width());
+            $("iframe").width($("#right").width());
+            $("iframe").height(($("#right").width()) * 551 / 980);
+        }
+        window.onload = function() {
+            window.onresize = adjust;
+            adjust();
+        }
+    });
+    </script>
+    <script src="https://use.typekit.net/fwz5ooq.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
+</body>
+
+</html>

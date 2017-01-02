@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Lyric Liu - Typewritter</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./style/page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="left">
+            <div id="left-text">
+                <h1>Typewritter</h1>
+                <div id="line"></div>
+                <p>Graphic Design + Animation</p>
+                <p>First shot on <a href="https://dribbble.com/YICHILIU">dribbble</a></p>
+                <h4>Personal Work</h4>
+                <span>07/2015</span>
+            </div>
+        </div>
+        <div id="right">
+            <img src="./img/page/printer.gif">
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        function adjust() {
+            $("img").width($("#right").width());
+            $("iframe").width($("#right").width());
+            $("iframe").height(($("#right").width()) * 551 / 980);
+        }
+        window.onload = function() {
+            window.onresize = adjust;
+            adjust();
+        }
+    });
+    </script>
+    <script src="https://use.typekit.net/fwz5ooq.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
+</body>
+
+</html>

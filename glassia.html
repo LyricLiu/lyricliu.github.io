@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <title>Lyric Liu - Glassia App</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./style/page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="left">
+            <div id="left-text">
+                <h1>Glassia Application</h1>
+                <div id="line"></div>
+                <p>Prototyping on glass design and glass blowing simulation.</p>
+                <h4>Personal Work</h4>
+                <span>11/2016</span>
+            </div>
+        </div>
+        <div id="right">
+            <img src="./img/page/glassia1.png">
+            <div class="para">
+                <h2>Introduction</h2>
+                <div class="line1"></div>
+                <p>This project is dedicated to the study of intervening into glass blowing learning process through the inclusion of an application. I began by directly engaged with a glass blowing class in Hotlanta Glass Blowing School in Atlanta. Through participatory observation and glass blowing practice, I went back with my understanding of glass blowing and then I prototyped an application to help people approach to this practice more easily with the aid of digital devices.</p>
+                <p>Here is my prototyping video:</p>
+            </div>
+            <div id="video">
+                <div id="play-button"></div>
+                <img src="./img/page/glassia2.png" id="videoPic">
+                <iframe width="980" height="551" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="para">
+                <h2>Enthnographic Note</h2>
+                <div class="line1"></div>
+                <p>The second glass blower kneels next to the blow pipes. She looks excited and a little bit embarrassed when waiting for Cory’s (instructor) instruction. She is giggling and laughing. After Cory speaks “blow” in a loud voice, she leans to the blow pipe and blows it. Seconds later, she messes it up when she doesn’t hear Cory’s instruction to stop blowing. She looks awkward and waits for Cory’s response. Cory is visibly annoyed. He doesn’t attempt to encourage her. He returns to the pick another blow pipe and asks her to redo the entire procedure. “I don’t want to blow anymore” she murmurs. Cory ignores that and forces her to repeat blowing...</p>
+            </div>
+            <div class="para">
+                <h2>Insights</h2>
+                <div class="line1"></div>
+                <p>Glassblowing is a very <label>danger</label> practice that requires professional skills. The requirement of specific machinery makes glass blowing an <label>expensive</label> practice. </p>
+                <p>The <label>inaccessibility</label> of glass blowing makes the glassblowing class <label>lack of cretivity</label>. Students in glass blowing class has no access to glass design process, they only strictly follow the instructions and go through the designated process. The instructor is completelty in charge of the teaching material.</p>
+                <p>Thus, glassblowing tends to be a <label>one-time practice</label> or a <label>dedicated apprenticeship</label>.</p>
+            </div>
+            <div class="para">
+                <h2>Implications for Design</h2>
+                <div class="line1"></div>
+                <p> In order to bridge the gap between professional glass blower and those who wants to experience glassblowing.</p>
+                <p> I designed an application which: <label>Allows participants to experience the glass blowing process on mobile device interface and after that, provides feedback based on participants’ design.</label></p>
+                <p>The feedbacks include:1. Generated working process to instruct participants on how to achieve your design; 2.Tutorial videos that relevant to participants’ design; 3.Glass blowing workshops nearby where participants can practice glass blowing; 4.Goods for sale that resemble participants’ design;</p>
+            </div>
+            <div class="para">
+                <h2>Prototyping</h2>
+                <div class="line1"></div>
+                <p><label>User Onboarding</label> : an animation to visualize the process of glass blowing</p>
+            </div>
+            <img src="./img/page/glassia3.png">
+            <div class="para">
+                <p><label>Hub Page & Menu</label> : Hub page displays user information and the collection of user-deigned glass pieces. It is also the entrance for creating a glass design project. Through clicking the top left button, the menu will be expanded. Menu contains user portfolio information and system setting.</p>
+            </div>
+            <img src="./img/page/glassia4.gif">
+            <div class="para">
+                <p><label>Glass Design</label> : This module goes through glass design practice. User can choose shape, color, size, opacity, patterns to create a virtual glass.</p>
+            </div>
+            <img src="./img/page/glassia5.gif">
+            <img src="./img/page/glassia6.gif">
+            <div class="para">
+                <p><label>Feedback Pages</label> : This module contains a hub page which displays general information of the glass and four buttons lead to different kinds of feedbacks including generated process page, video tutorial page, sale page and workshop page.</p>
+            </div>
+            <img src="./img/page/glassia7.gif">
+            <div class="para">
+                <h2>Wireframes</h2>
+                <div class="line1"></div>
+            </div>
+            <img src="./img/page/glassia8.png">
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        function adjust() {
+            $("img").width($("#right").width());
+            $("iframe").width($("#right").width());
+            $("iframe").height(($("#right").width()) * 551 / 980);
+        }
+        window.onload = function() {
+            window.onresize = adjust;
+            adjust();
+        }
+    });
+
+    $('#play-button').click(function() {
+        $('#videoPic').hide();
+        $('#play-button').hide();
+        $('iframe').show();
+        $('iframe').attr("src", "https://player.vimeo.com/video/193761301?autoplay=1&title=0&byline=0&portrait=0");
+    });
+    </script>
+    <script src="https://use.typekit.net/fwz5ooq.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
+</body>
+
+</html>
