@@ -1,13 +1,51 @@
 (function() {
     $(document).ready(function() {
         function adjust() {
-            $(".begin").width($(window).width()).height($(window).height());
-            var fsize = (($(window).width()) / 1440 * 1.9).toString() + 'em';
-            $("#type-text").css("font-size", fsize);
-            $(".p-col div").width(($(window).width() - 1) / 6).height(($(window).width() - 1) / 6);
-            $(".p-col div h2").css("margin-top", ((($(window).width()) / 1440 * 70).toString() + 'px'));
-            $(".p-col div h2").css("font-size", ((($(window).width()) / 1440 * 1.6).toString() + 'em'));
+            if ($(window).width() < 1440) {
+                $(".begin").width($(window).width()).height($(window).height());
+                var fsize = (($(window).width()) / 1440 * 1.9).toString() + 'em';
+                $("#type-text").css("font-size", fsize);
+                $(".p-col div").width(($(window).width() - 1) / 6).height(($(window).width() - 1) / 6);
+                $(".p-col div h2").css("margin-top", ((($(window).width()) / 1440 * 70).toString() + 'px'));
+                $(".p-col div h2").css("font-size", ((($(window).width()) / 1440 * 1.6).toString() + 'em'));
+                $(".begin").css("left", "0");
+                $("#type-text").css("width", "100%");
+                $("#type-text").css("left", "9%");
+                $("#p-wrap0").css("width", "100%");
+                $("#p-wrap0").css("left", "0");
+                $("header").css("width", "100%");
+                $("header").css("left", "0");
+                $("#menu-icon").css("right", "40px");
+                $("#p-wrap1").css("width", "100%");
+                $("#p-wrap1").css("left", "0");
+                $("#p-wrap2").css("width", "100%");
+                $("#p-wrap2").css("left", "0");
+                $("#p-wrap3").css("width", "100%");
+                $("#p-wrap3").css("left", "0");
+                $("#p-wrap4").css("width", "100%");
+                $("#p-wrap4").css("left", "0");
+                $("#page-close").css("left", "300px");
+            } else {
+                $(".begin").css("left", "calc(50% - 720px)");
+                $("#type-text").css("width", "1180px");
+                $("#type-text").css("left", "calc(50% - 590px)");
+                $("#p-wrap0").css("width", "1440px");
+                $("#p-wrap0").css("left", "calc(50% - 720px)");
+                $("header").css("width", "1440px");
+                $("header").css("left", "calc(50% - 720px)");
+                $("#menu-icon").css("right", "calc(50% - 720px)");
+                $("#p-wrap1").css("width", "1440px");
+                $("#p-wrap1").css("left", "calc(50% - 720px)");
+                $("#p-wrap2").css("width", "1440px");
+                $("#p-wrap2").css("left", "calc(50% - 720px)");
+                $("#p-wrap3").css("width", "1440px");
+                $("#p-wrap3").css("left", "calc(50% - 720px)");
+                $("#p-wrap4").css("width", "1440px");
+                $("#p-wrap4").css("left", "calc(50% - 720px)");
+                $("#page-close").css("left", "calc(50% - 420px)");
+            }
         }
+
         window.onload = function() {
             window.onresize = adjust;
             adjust();
@@ -276,20 +314,20 @@
 
     function transAnim() {
         $('#trans-anim').show();
-        $("#mask10").animate({ left: "+=2400px" }, 1000, 'easeInOutCubic');
-        $("#mask20").delay(200).animate({ left: "+=2400px" }, 800, 'easeInOutCubic');
+        $("#mask10").animate({ left: "+=2800px" }, 1000, 'easeInOutCubic');
+        $("#mask20").delay(200).animate({ left: "+=2800px" }, 800, 'easeInOutCubic');
         setTimeout(function() {
             $('#trans-anim').hide();
-            $("#mask10").animate({ left: "-=2400px" }, 800, 'easeInOutCubic');
-            $("#mask20").delay(200).animate({ left: "-=2400px" }, 600, 'easeInOutCubic');
+            $("#mask10").animate({ left: "-=2800px" }, 800, 'easeInOutCubic');
+            $("#mask20").delay(200).animate({ left: "-=2800px" }, 600, 'easeInOutCubic');
         }, 1000);
     }
 
     function hideWrap0() {
         if ($('#p-wrap0').is(':visible')) {
             $(".p-col div").delay(600).fadeOut(400);
-            $(".mask1").animate({ left: "-=2400px" }, 1000, 'easeInOutCubic');
-            $(".mask2").delay(200).animate({ left: "-=2400px" }, 800, 'easeInOutCubic');
+            $(".mask1").animate({ left: "-=2800px" }, 1000, 'easeInOutCubic');
+            $(".mask2").delay(200).animate({ left: "-=2800px" }, 800, 'easeInOutCubic');
             setTimeout(function() {
                 $("#p-wrap0").hide();
             }, 1000);
@@ -301,8 +339,8 @@
             setTimeout(function() {
                 $("#p-wrap0").show();
                 $(".p-col div").delay(400).fadeIn(400);
-                $(".mask1").animate({ left: "+=2400px" }, 1000, 'easeInOutCubic');
-                $(".mask2").delay(200).animate({ left: "+=2400px" }, 800, 'easeInOutCubic');
+                $(".mask1").animate({ left: "+=2800px" }, 1000, 'easeInOutCubic');
+                $(".mask2").delay(200).animate({ left: "+=2800px" }, 800, 'easeInOutCubic');
             }, 500);
 
         }
@@ -392,10 +430,10 @@
         $("#navi4").addClass('active');
     }
 
-    function hideWrap5(){
+    function hideWrap5() {
         $('#p-wrap5').fadeOut(800);
         setTimeout(function() {
-           $('iframe').attr("src", "");
+            $('iframe').attr("src", "");
         }, 1000);
     }
 
@@ -540,7 +578,7 @@
         transAnim();
         showWrap1();
         hideWrap5();
-       
+
     });
 
     $("#halloween").click(function() {
@@ -579,19 +617,19 @@
         $('iframe').attr("src", "./memo.html");
     });
 
-     $("#ustay").click(function() {
+    $("#ustay").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
         $('iframe').attr("src", "./ustay.html");
     });
 
-     $("#superhero").click(function() {
+    $("#superhero").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
         $('iframe').attr("src", "./superhero.html");
     });
 
-     $("#draw").click(function() {
+    $("#draw").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
         $('iframe').attr("src", "./draw.html");
