@@ -370,6 +370,7 @@ header {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: absolute;
 }
 
 .begin{
@@ -382,6 +383,13 @@ header {
 
 #source {
     display: none;
+}
+
+#type-wrap{
+    width:100%;
+    height:100%;
+    position: absolute;
+    overflow: hidden;
 }
 
 #type-text {
