@@ -67,7 +67,7 @@ a{
 /********** Menu ***********/
 #menu-icon {
     position: fixed;
-    top: 50px;
+    top: 45px;
     right: 40px;
     width: 50px;
     height: 30px;
@@ -193,12 +193,12 @@ a{
     font-size: 1.4em;
 }
 
-#menu-bar h2 {
+#menu-bar h2 a{
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
 
-#menu-bar h2:hover {
+#menu-bar h2 a:hover {
     color: #5f576e;
     transition: all 0.3s ease-in-out;
 }
@@ -448,4 +448,179 @@ h3 {
     color: #221814;
 }
 
+/******* Who I am *******/
+#o {
+    width: 39px;
+    height: 39px;
+    background-image: url(../img/o.png);
+    position: absolute;
+    left: 4rem;
+    top: 9rem;
+}
 
+#iu1 {
+    width: 78px;
+    height: 62px;
+    background-image: url(../img/iu1.png);
+    position: absolute;
+    right: 7rem;
+    top: 11rem;
+    z-index: 999;
+}
+
+#s1-left {
+    left:5rem;
+    position: absolute;
+    top:32rem;
+}
+
+#s1-left span {
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 4rem;
+}
+
+#s1-left h1 {
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    color: #53565a;
+    font-size: 4rem;
+    text-align: left;
+}
+
+#s1-left h1 span {
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-size: 4rem;
+    font-weight: 100;
+    color: #e69c9d;
+}
+
+#s-line1-cover {
+    height: 1.5px;
+    width: 600px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#s-line1 {
+    height: 1.5px;
+    width: 0;
+    background-color: #756d88;
+}
+
+#s-line1.active {
+    width: 600px;
+    height: 1.5px;
+    background-color: #756d88;
+    transition: width 0.6s ease-in-out;
+}
+
+#s1-left p {
+    width: 550px;
+    font-size: 1.8rem;
+    padding: 5px;
+    display:none;
+    line-height: 2rem;
+}
+
+#s1-left label {
+    color:#e69c9d;
+}
+
+#s1-right {
+    width: 312px;
+    height: 331px;
+    background-image: url(../img/s1.gif);
+    position: absolute;
+    right: 11rem;
+    top: 9rem;
+}
+
+#s2-upper-left {
+    width: 378px;
+    height: 315px;
+    background-image: url(../img/s2-w.png);
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    z-index: 999;
+    display: none;
+}
+
+#s-line2 {
+    position: absolute;
+    height: 1.5px;
+    width:0;
+    background-color: #756d88;
+    top: 9rem;
+    left: 100px;
+}
+
+#s-line2.active{
+    width:35rem;
+    transition: width 0.6s ease-in-out;
+}
+
+#s2-upper-right {
+    position: absolute;
+    width: 330px;
+    right: 2rem;
+    top: 9.5rem;
+}
+
+
+#s2 h2 {
+    color: #53565a;
+    font-size: 3rem;
+    font-weight: 400;
+    position: absolute;
+    z-index: 999;
+    right:0;
+    display: none;
+}
+
+#s2 h4 {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#s2-bottom-right {
+    position: absolute;
+    padding: 20px 0 0 20px;
+    overflow: hidden;
+    width: 35rem;
+    left:2rem;
+    top:18rem;
+    display: none;
+}
+
+#s2-bottom-left {
+    position: absolute;
+    padding: 20px 0 0 20px;
+    overflow: hidden;
+    width: 35rem;
+    left:2rem;
+    top:38rem;
+    display: none;
+}
+
+#s2-bottom-left h4,
+#s2-bottom-right h4{
+    padding-top: 10px;
+    margin-left: 35px;
+}
+
+
+#s2-bottom-left div,
+#s2-bottom-right div {
+    float: left;
+    margin: 20px 40px;
+}
+
+#s2-bottom-left div{
+    margin-right: 80px;
+}
