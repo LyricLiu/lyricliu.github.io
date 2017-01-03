@@ -584,55 +584,55 @@
     $("#halloween").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
-        $('iframe').attr("src", "./halloween.html");
+        $('iframe').attr("src", "./pages/halloween.html");
     });
 
     $("#flawed").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
-        $('iframe').attr("src", "./flawed.html");
+        $('iframe').attr("src", "./pages/flawed.html");
     });
 
     $("#tea").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
-        $('iframe').attr("src", "./tea.html");
+        $('iframe').attr("src", "./pages/tea.html");
     });
 
     $("#cosmos").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
-        $('iframe').attr("src", "./cosmos.html");
+        $('iframe').attr("src", "./pages/cosmos.html");
     });
 
     $("#glassia").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
-        $('iframe').attr("src", "./glassia.html");
+        $('iframe').attr("src", "./pages/glassia.html");
     });
 
     $("#memo").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
-        $('iframe').attr("src", "./memo.html");
+        $('iframe').attr("src", "./pages/memo.html");
     });
 
     $("#ustay").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
-        $('iframe').attr("src", "./ustay.html");
+        $('iframe').attr("src", "./pages/ustay.html");
     });
 
     $("#superhero").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
-        $('iframe').attr("src", "./superhero.html");
+        $('iframe').attr("src", "./pages/superhero.html");
     });
 
     $("#draw").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
-        $('iframe').attr("src", "./draw.html");
+        $('iframe').attr("src", "./pages/draw.html");
     });
 
     /*  home page content link   */
@@ -641,7 +641,7 @@
         setTimeout(function() {
             $('#p-wrap5').show();
         }, 1000);
-        $('iframe').attr("src", "./flawed.html");
+        $('iframe').attr("src", "./pages/flawed.html");
     });
 
     $("#p2").click(function() {
@@ -649,7 +649,7 @@
         setTimeout(function() {
             $('#p-wrap5').show();
         }, 1000);
-        $('iframe').attr("src", "./glassia.html");
+        $('iframe').attr("src", "./pages/glassia.html");
     });
 
     $("#p3").click(function() {
@@ -657,7 +657,7 @@
         setTimeout(function() {
             $('#p-wrap5').show();
         }, 1000);
-        $('iframe').attr("src", "./glassia.html");
+        $('iframe').attr("src", "./pages/glassia.html");
     });
 
     $("#p4").click(function() {
@@ -665,7 +665,7 @@
         setTimeout(function() {
             $('#p-wrap5').show();
         }, 1000);
-        $('iframe').attr("src", "./tea.html");
+        $('iframe').attr("src", "./pages/tea.html");
     });
 
     $("#p5").click(function() {
@@ -673,7 +673,7 @@
         setTimeout(function() {
             $('#p-wrap5').show();
         }, 1000);
-        $('iframe').attr("src", "./printer.html");
+        $('iframe').attr("src", "./pages/printer.html");
     });
 
     $("#p6").click(function() {
@@ -681,7 +681,7 @@
         setTimeout(function() {
             $('#p-wrap5').show();
         }, 1000);
-        $('iframe').attr("src", "./superhero.html");
+        $('iframe').attr("src", "./pages/superhero.html");
     });
 
     $("#p7").click(function() {
@@ -689,7 +689,7 @@
         setTimeout(function() {
             $('#p-wrap5').show();
         }, 1000);
-        $('iframe').attr("src", "./halloween.html");
+        $('iframe').attr("src", "./pages/halloween.html");
     });
 
     $("#p8").click(function() {
@@ -697,7 +697,7 @@
         setTimeout(function() {
             $('#p-wrap5').show();
         }, 1000);
-        $('iframe').attr("src", "./tea.html");
+        $('iframe').attr("src", "./pages/tea.html");
     });
 
     $("#p9").click(function() {
@@ -705,7 +705,7 @@
         setTimeout(function() {
             $('#p-wrap5').show();
         }, 1000);
-        $('iframe').attr("src", "./flawed.html");
+        $('iframe').attr("src", "./pages/flawed.html");
     });
 
     $("#p10").click(function() {
@@ -713,7 +713,7 @@
         setTimeout(function() {
             $('#p-wrap5').show();
         }, 1000);
-        $('iframe').attr("src", "./ustay.html");
+        $('iframe').attr("src", "./pages/ustay.html");
     });
 
     $("#p11").click(function() {
@@ -721,7 +721,7 @@
         setTimeout(function() {
             $('#p-wrap5').show();
         }, 1000);
-        $('iframe').attr("src", "./cosmos.html");
+        $('iframe').attr("src", "./pages/cosmos.html");
     });
 
 

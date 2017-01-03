@@ -1,0 +1,254 @@
+$ppr: 750px/16/1rem;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-text-size-adjust: none;
+}
+
+html {
+  font-size: $ppr*1rem;
+  background-color: #fff;
+}
+
+body {
+  width: 750px/$ppr;
+  margin: 0 auto;
+  line-height: 1.4;
+  background-color: #fff;
+}
+
+.fullimg{
+	width: 750px/$ppr;
+  	margin: 0 auto;
+}
+
+#lyric-logo {
+    background: url(../img/Lyric-logo.png);
+    width: 126px;
+    height: 91px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+/********** Menu ***********/
+#menu-icon {
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    width: 35px;
+    height: 21px;
+    z-index: 9999;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#menu-icon div {
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #5f5f5f;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#menu-icon div:nth-child(1) {
+    top: 0px;
+}
+
+#menu-icon div:nth-child(2),
+#menu-icon div:nth-child(3) {
+    top: 10px;
+}
+
+#menu-icon div:nth-child(4) {
+    top: 21px;
+}
+
+#menu-icon.open div:nth-child(1) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+    background-color: #fff;
+}
+
+#menu-icon.open div:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #fff;
+    height: 2px;
+}
+
+#menu-icon.open div:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: #fff;
+    height: 2px;
+}
+
+#menu-icon.open div:nth-child(4) {
+    top: 21px;
+    width: 0%;
+    left: 50%;
+    background-color: #fff;
+}
+
+#menu-bar {
+    position: fixed;
+    width: 640px/$ppr;
+    height: 100%;
+    z-index: 9998;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    display: none;
+}
+
+#menu-bar h2{
+    cursor: pointer;
+}
+
+#menu-bar.active {
+    display: block;
+}
+
+#menu-mask {
+    position: absolute;
+    overflow: hidden;
+    top: -500px;
+    left: -200px;
+    width: 1000px;
+    height: 1300px;
+    background-color: #e69c9d;
+    opacity: 0;
+    transform: translate(20px, -800px) rotate(200deg);
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+#menu-mask.active1 {
+    opacity: 1;
+    transform: translate(-20px, 50px) rotate(200deg);
+    transition: all 0.5s ease-in-out;
+}
+
+#menu-bar h2 {
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    font-weight: 200;
+    font-size: 1.4em;
+}
+
+#menu-bar h2 {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu-bar h2:hover {
+    color: #5f576e;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu-bar h2:nth-child(1) {
+    margin-top: 100px;
+}
+
+#menu-bar h2.active2 {
+    opacity: 1;
+}
+
+#menu-bar div {
+    margin-top: 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#menu-bar div.active2 {
+    opacity: 1;
+}
+
+#dribbble1 {
+    background-image: url(../img/dribbble1.png);
+    width: 25px;
+    height: 24px;
+    float: left;
+    position: relative;
+    left: 212px;
+}
+
+#dribbble1:hover {
+    background-image: url(../img/dribbble10.png);
+    transition: all 0.3s ease-in-out;
+}
+
+#vimeo1 {
+    background-image: url(../img/vimeo1.png);
+    width: 25px;
+    height: 20px;
+    float: left;
+    position: relative;
+    left: 242px;
+    top: 3px;
+}
+
+#vimeo1:hover {
+    background-image: url(../img/vimeo10.png);
+    transition: all 0.3s ease-in-out;
+}
+
+#github1 {
+    background-image: url(../img/github1.png);
+    width: 23px;
+    height: 25px;
+    float: left;
+    position: relative;
+    left: 272px;
+}
+
+#github1:hover {
+    background-image: url(../img/github10.png);
+    transition: all 0.3s ease-in-out;
+}
+
+/********** Index ***********/
+#hello-img{
+	position: absolute;
+	top:150px;
+	left:0;
+}
+
+#hello-img1{
+	position: absolute;
+	top:150px;
+	left:0;
+	display: none;
+}
+
+#hello-text{
+	position: absolute;
+	top:800px;
+}

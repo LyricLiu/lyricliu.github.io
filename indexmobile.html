@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lyric Liu</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./style/mobile.css">
+    <link rel="stylesheet" href="./style/typing.css">
+    <link rel="stylesheet" href="./style/animate.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, width=750">
+    <!--script type="text/javascript" src="./script/mobile.js"></script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="./script/typing.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="lyric-logo"></div>
+        <div id="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <div id="menu-bar">
+        <h2 id="menu-bar1">What I do</h2>
+        <h2 id="menu-bar2">Who I am</h2>
+        <h2 id="menu-bar3">Day by day</h2>
+        <h2 id="menu-bar4">Say hi</h2>
+        <a href="https://dribbble.com/YICHILIU">
+            <div id="dribbble1"></div>
+        </a>
+        <a href="https://vimeo.com/lyricliu">
+            <div id="vimeo1"></div>
+        </a>
+        <a href="https://github.com/LyricLiu">
+            <div id="github1"></div>
+        </a>
+        <div id="menu-mask"></div>
+    </div>
+
+    <div id="hello-text">
+        <div id="source">
+            I am Lyric Liu
+        </div>
+        <div id="output-wrap">
+            <span id="output"></span>
+            <span class="typing-cursor">|</span>
+        </div>
+        <p id="begin-text" class="fadeInUp">I specialize in
+            <label>web design & development</label>,
+            <label>illustration</label>,
+            <label>video</label> and
+            <label>animation</label>.
+        </p>
+    </div>
+
+    <img class="fullimg" id="hello-img" src="./img/hello-mobile.gif">
+    <img class="fullimg" id="hello-img1" src="./img/hello-stay.png">
+    <script>
+    var typing = new Typing({
+        source: document.getElementById('source'),
+        output: document.getElementById('output'),
+        delay: 80,
+        done: function() {}
+    });
+    typing.start();
+    </script>
+    <script src="https://use.typekit.net/fwz5ooq.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
+    <script type="text/javascript" src="./script/main1.js"></script>
+</body>
+</html>
