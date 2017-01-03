@@ -16,6 +16,24 @@ body {
   margin: 0 auto;
   line-height: 1.4;
   background-color: #fff;
+  font-size: 1em;
+  font-family: brandon-grotesque, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+p {
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+span {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
 }
 
 .fullimg{
