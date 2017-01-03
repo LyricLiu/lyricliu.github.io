@@ -266,7 +266,7 @@ span {
 
 #hello-text{
 	position: absolute;
-	top:720px;
+	top:700px;
 	left:3rem;
 }
 
@@ -299,7 +299,7 @@ span {
 	color:#5f576e;
 	text-align: center;
 	width:15rem;
-	bottom: 80px;
+	bottom: 40px;
 	text-decoration: none;
 	padding:5px 10px 5px 10px;
 	border:1px solid #5f576e;
