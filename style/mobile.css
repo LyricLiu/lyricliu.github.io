@@ -253,21 +253,22 @@ span {
 /********** Index ***********/
 #hello-img{
 	position: absolute;
-	top:120px;
+	top:100px;
 	left:0;
 }
 
 #hello-img1{
 	position: absolute;
-	top:120px;
+	top:100px;
 	left:0;
 	display: none;
 }
 
 #hello-text{
 	position: absolute;
-	top:700px;
+	top:670px;
 	left:3rem;
+	z-index: 999;
 }
 
 #source{
