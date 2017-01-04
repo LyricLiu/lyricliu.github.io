@@ -1,23 +1,23 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  -webkit-text-size-adjust: none;
+    box-sizing: border-box;
+    margin: 0;
+    -webkit-text-size-adjust: none;
 }
 
 html {
-  font-size: 1rem;
-  background-color: #fff;
+    font-size: 1rem;
+    background-color: #fff;
 }
 
 body {
-  width: 40rem;
-  margin: 0 auto;
-  line-height: 1.4;
-  background-color: #fff;
-  font-size: 2rem;
-  font-family: brandon-grotesque, sans-serif;
-  font-style: normal;
-  font-weight: 100;
+    width: 40rem;
+    margin: 0 auto;
+    line-height: 1.4;
+    background-color: #fff;
+    font-size: 2rem;
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 100;
 }
 
 p {
@@ -44,13 +44,13 @@ h1 {
     letter-spacing: 4px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.fullimg{
-	width: 40rem;
-  	margin: 0 auto;
+.fullimg {
+    width: 40rem;
+    margin: 0 auto;
 }
 
 #lyric-logo {
@@ -64,7 +64,9 @@ a{
     cursor: pointer;
 }
 
+
 /********** Menu ***********/
+
 #menu-icon {
     position: fixed;
     top: 45px;
@@ -156,7 +158,7 @@ a{
     display: none;
 }
 
-#menu-bar h2{
+#menu-bar h2 {
     cursor: pointer;
 }
 
@@ -193,7 +195,7 @@ a{
     font-size: 1.4em;
 }
 
-#menu-bar h2 a{
+#menu-bar h2 a {
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
@@ -264,68 +266,72 @@ a{
     transition: all 0.3s ease-in-out;
 }
 
+
 /********** Index ***********/
-#hello-img{
-	position: absolute;
-	top:100px;
-	left:0;
+
+#hello-img {
+    position: absolute;
+    top: 100px;
+    left: 0;
 }
 
-#hello-img1{
-	position: absolute;
-	top:100px;
-	left:0;
-	display: none;
+#hello-img1 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: none;
 }
 
-#hello-text{
-	position: relative;
-	top:670px;
-	left:3rem;
-	z-index: 999;
+#hello-text {
+    position: relative;
+    top: 670px;
+    left: 3rem;
+    z-index: 999;
 }
 
-#source{
-	display: none;
+#source {
+    display: none;
 }
 
-#output{
-	font-family: brandon-grotesque, sans-serif;
+#output {
+    font-family: brandon-grotesque, sans-serif;
     color: #5f576e;
     font-size: 3rem;
 }
 
-.typing-cursor{
-	font-size: 3rem;
+.typing-cursor {
+    font-size: 3rem;
 }
 
-#begin-text{
-	font-size: 2rem;
-	margin-left:5px;
-	display: none;
+#begin-text {
+    font-size: 2rem;
+    margin-left: 5px;
+    display: none;
 }
 
 #begin-text label {
     color: #e69c9d;
 }
 
-#hello-in{
-	position: absolute;
-	color:#5f576e;
-	text-align: center;
-	width:15rem;
-    top:860px;
-	text-decoration: none;
-	padding:5px 10px 5px 10px;
-	border:1px solid #5f576e;
-	border-radius: 5px;
-	left:calc(50% - 7.5rem);
+#hello-in {
+    position: absolute;
+    color: #5f576e;
+    text-align: center;
+    width: 15rem;
+    top: 860px;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #5f576e;
+    border-radius: 5px;
+    left: calc(50% - 7.5rem);
 }
 
+
 /*****   what I do ********/
-.wrap{
+
+.wrap {
     position: relative;
-    width:40rem;
+    width: 40rem;
 }
 
 #wrap1-head {
@@ -346,8 +352,8 @@ a{
     color: #5f576e;
 }
 
-#wrap1-head span a{
-     color: #5f576e;
+#wrap1-head span a {
+    color: #5f576e;
 }
 
 #wrap1-head span:before {
@@ -372,7 +378,7 @@ a{
 .w-block {
     width: 36rem;
     position: relative;
-    margin:0 2rem;
+    margin: 0 2rem;
     margin-bottom: 4rem;
     display: inline-block;
     overflow: hidden;
@@ -411,8 +417,7 @@ a{
     background: url(../img/w7.png) no-repeat center;
 }
 
-#w8 {
-}
+#w8 {}
 
 #w9 {
     background: url(../img/w9.png) no-repeat center;
@@ -436,7 +441,7 @@ h3 {
 .w-block span {
     position: absolute;
     right: 0;
-    top:15.8rem;
+    top: 15.8rem;
     font-family: brandon-grotesque, sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -448,7 +453,9 @@ h3 {
     color: #221814;
 }
 
+
 /******* Who I am *******/
+
 #o {
     width: 39px;
     height: 39px;
@@ -469,9 +476,9 @@ h3 {
 }
 
 #s1-left {
-    left:5rem;
+    left: 5rem;
     position: absolute;
-    top:32rem;
+    top: 32rem;
 }
 
 #s1-left span {
@@ -522,12 +529,12 @@ h3 {
     width: 550px;
     font-size: 1.8rem;
     padding: 5px;
-    display:none;
+    display: none;
     line-height: 2rem;
 }
 
 #s1-left label {
-    color:#e69c9d;
+    color: #e69c9d;
 }
 
 #s1-right {
@@ -553,14 +560,14 @@ h3 {
 #s-line2 {
     position: absolute;
     height: 1.5px;
-    width:0;
+    width: 0;
     background-color: #756d88;
     top: 9rem;
     left: 100px;
 }
 
-#s-line2.active{
-    width:35rem;
+#s-line2.active {
+    width: 35rem;
     transition: width 0.6s ease-in-out;
 }
 
@@ -571,14 +578,13 @@ h3 {
     top: 9.5rem;
 }
 
-
 #s2 h2 {
     color: #53565a;
     font-size: 3rem;
     font-weight: 400;
     position: absolute;
     z-index: 999;
-    right:0;
+    right: 0;
     display: none;
 }
 
@@ -593,8 +599,8 @@ h3 {
     padding: 20px 0 0 20px;
     overflow: hidden;
     width: 35rem;
-    left:2rem;
-    top:18rem;
+    left: 2rem;
+    top: 18rem;
     display: none;
 }
 
@@ -603,17 +609,16 @@ h3 {
     padding: 20px 0 0 20px;
     overflow: hidden;
     width: 35rem;
-    left:2rem;
-    top:38rem;
+    left: 2rem;
+    top: 38rem;
     display: none;
 }
 
 #s2-bottom-left h4,
-#s2-bottom-right h4{
+#s2-bottom-right h4 {
     padding-top: 10px;
     margin-left: 35px;
 }
-
 
 #s2-bottom-left div,
 #s2-bottom-right div {
@@ -621,13 +626,13 @@ h3 {
     margin: 20px 40px;
 }
 
-#s2-bottom-left div{
+#s2-bottom-left div {
     margin-right: 80px;
 }
 
-#s3 h2{
-    right:15rem;
-    top:2rem;
+#s3 h2 {
+    right: 15rem;
+    top: 2rem;
     color: #53565a;
     font-size: 3rem;
     font-weight: 400;
@@ -635,37 +640,37 @@ h3 {
     z-index: 999;
 }
 
-#s3-block{
-    width:56px;
-    height:5rem;
+#s3-block {
+    width: 56px;
+    height: 5rem;
     position: absolute;
-    right:2rem;
-    top:-3rem;
+    right: 2rem;
+    top: -3rem;
     background-color: #e69c9d;
 }
 
-#s3-block.active{
-    height:54rem;
+#s3-block.active {
+    height: 54rem;
     transition: all 1s ease-in-out;
 }
 
-#s3-left{
+#s3-left {
     position: absolute;
-    left:10px;
-    width:370px;
-    height:470px;
-    top:190px;
+    left: 10px;
+    width: 370px;
+    height: 470px;
+    top: 190px;
 }
 
-#s3-right{
+#s3-right {
     position: absolute;
-    right:10rem;
-    width:386px;
-    height:470px;
-    top:5rem;
+    right: 10rem;
+    width: 386px;
+    height: 470px;
+    top: 5rem;
 }
 
-#s3-right-icon{
+#s3-right-icon {
     width: 386px;
     height: 246px;
     background-image: url(../img/s3-2.png);
@@ -673,7 +678,6 @@ h3 {
     left: 3rem;
     top: 4rem;
     z-index: 999;
-    display: none;
 }
 
 #s3-gif1 {
@@ -682,8 +686,8 @@ h3 {
     background-image: url(../img/s7.gif);
     position: absolute;
     right: -20rem;
-    top:4rem;
-    display:none;
+    top: 4rem;
+    display: none;
 }
 
 #s3-gif2 {
@@ -692,211 +696,210 @@ h3 {
     background-image: url(../img/s8.gif);
     position: absolute;
     right: -20rem;
-    top:4rem;
-    display:none;
+    top: 4rem;
+    display: none;
 }
 
-#s3-left-text{
+#s3-left-text {
     width: 362px;
     height: 165px;
     background-image: url(../img/s3-1text.png);
     position: absolute;
-    top:43rem;
-    left:6rem;
+    top: 43rem;
+    left: 6rem;
     display: none;
 }
 
-#s3-right-text{
+#s3-right-text {
     width: 368px;
     height: 161px;
     background-image: url(../img/s3-2text.png);
     position: absolute;
-    top:22rem;
-    left:0;
+    top: 22rem;
+    left: 0;
     display: none;
 }
 
-#s3-pic{
+#s3-pic {
     width: 118px;
     height: 88px;
     background-image: url(../img/s3-3.png);
     position: absolute;
-    top:38rem;
-    right:2px;
-    z-index:999;
+    top: 38rem;
+    right: 2px;
+    z-index: 999;
     display: none;
 }
 
-#s3 h4{
+#s3 h4 {
     font-family: brandon-grotesque, sans-serif;
     font-weight: 300;
     position: absolute;
-    right:13rem;
-    top:39rem;
-    color:#5f576e;
+    right: 13rem;
+    top: 39rem;
+    color: #5f576e;
     display: none;
 }
 
-
-#s4 h2{
+#s4 h2 {
     position: absolute;
     left: 2rem;
-    top:2rem;
+    top: 2rem;
     font-size: 3rem;
     font-weight: 400;
     z-index: 999;
 }
 
-#s4-left{
+#s4-left {
     width: 486px;
     height: 460px;
     background-image: url(../img/s3.gif);
     position: absolute;
     top: 7rem;
-    left:5rem;
+    left: 5rem;
 }
 
-#s4-line{
+#s4-line {
     position: absolute;
     height: 1.5px;
     background-color: #756d88;
     top: 7rem;
     left: 0;
-    z-index:999;
-    width:0;
+    z-index: 999;
+    width: 0;
 }
 
-#s4-line.active{
-    width:35rem;
+#s4-line.active {
+    width: 35rem;
     transition: width 0.6s ease-in-out;
 }
 
-#s4 h4{
+#s4 h4 {
     font-weight: 100;
     font-size: 1.2rem;
     font-style: italic;
 }
 
-#s4-right{
+#s4-right {
     position: absolute;
-    left:3rem;
-    top:38rem;
-    width:34rem;
+    left: 3rem;
+    top: 38rem;
+    width: 34rem;
     display: none;
 }
 
-h5{
+h5 {
     font-size: 1.6rem;
-    color:#808080;
-    font-weight:200;
+    color: #808080;
+    font-weight: 200;
 }
 
-#s4-right div{
+#s4-right div {
     margin-bottom: 20px;
 }
 
-#s4 a{
-    color:#e69c9d;
+#s4 a {
+    color: #e69c9d;
 }
 
-#s5-line{
-    width:1.5px;
+#s5-line {
+    width: 1.5px;
     position: absolute;
-    left:20rem;
-    top:0;
-    height:0;
+    left: 20rem;
+    top: 0;
+    height: 0;
     background-color: #756d88;
 }
 
-#s5-line.active{
-    height:45rem;
+#s5-line.active {
+    height: 45rem;
     transition: all 1s ease-in-out;
 }
 
-#s5-left{
+#s5-left {
     width: 318px;
     height: 296px;
     background-image: url(../img/s5.png);
     position: absolute;
-    top:16rem;
-    left:2rem;
-    z-index: 999;
+    top: 16rem;
+    left: 2rem;
+    z-index: 9999;
     display: none;
 }
 
-#s5-right{
+#s5-right {
     display: none;
     position: absolute;
-    right:3rem;
-    top:14rem;
+    right: 3rem;
+    top: 14rem;
 }
 
-#s5-right div{
-    margin:2rem 0;
+#s5-right div {
+    margin: 2rem 0;
 }
 
-#s5-upper{
+#s5-upper {
     width: 188px;
     height: 110px;
     background-image: url(../img/s4.gif);
     position: absolute;
-    right:4rem;
-    top:38rem;
+    right: 4rem;
+    top: 38rem;
 }
 
-#s6-upper{
-    height:11px;
-    width:17rem;
+#s6-upper {
+    height: 11px;
+    width: 17rem;
     background-color: #e7d9c7;
     position: absolute;
-    left:3rem;
-    top:45rem;
+    left: 3rem;
+    top: 45rem;
     display: none;
 }
 
-#s6 h2{
+#s6 h2 {
     position: absolute;
-    top:36rem;
-    left:4rem;
+    top: 36rem;
+    left: 4rem;
     z-index: 999;
     font-size: 3rem;
     font-weight: 400;
 }
 
-#s6-right{
+#s6-right {
     width: 560px;
     height: 700px;
     background-image: url(../img/s5.gif);
     position: absolute;
-    right:-9rem;
-    top:2rem;
+    right: -9rem;
+    top: 2rem;
 }
 
-#s6-icon{
+#s6-icon {
     position: absolute;
-    left:4rem;
-    top:34rem;
-    z-index:999;
+    left: 4rem;
+    top: 34rem;
+    z-index: 999;
     display: none;
 }
 
-#s6-icon a{
-    margin-right:2rem;
+#s6-icon a {
+    margin-right: 2rem;
 }
 
-#s6-icon a:nth-child(1){
+#s6-icon a:nth-child(1) {
     background-image: url(../img/dribbble10.png);
     width: 25px;
     height: 24px;
     float: left;
 }
 
-#s6-icon a:nth-child(1):hover{
+#s6-icon a:nth-child(1):hover {
     background-image: url(../img/dribbble1.png);
     transition: all 0.3s ease-in-out;
 }
 
-#s6-icon a:nth-child(2){
+#s6-icon a:nth-child(2) {
     background-image: url(../img/vimeo10.png);
     width: 25px;
     height: 20px;
@@ -904,36 +907,36 @@ h5{
     margin-top: 2px;
 }
 
-#s6-icon a:nth-child(2):hover{
+#s6-icon a:nth-child(2):hover {
     background-image: url(../img/vimeo1.png);
     transition: all 0.3s ease-in-out;
 }
 
-#s6-icon a:nth-child(3){
+#s6-icon a:nth-child(3) {
     background-image: url(../img/github10.png);
     width: 23px;
     height: 25px;
     float: left;
 }
 
-#s6-icon a:nth-child(3):hover{
+#s6-icon a:nth-child(3):hover {
     background-image: url(../img/github1.png);
     transition: all 0.3s ease-in-out;
 }
 
-#s6-icon a:nth-child(4){
+#s6-icon a:nth-child(4) {
     background-image: url(../img/facebook10.png);
     width: 24px;
     height: 24px;
     float: left;
 }
 
-#s6-icon a:nth-child(4):hover{
+#s6-icon a:nth-child(4):hover {
     background-image: url(../img/facebook1.png);
     transition: all 0.3s ease-in-out;
 }
 
-#s6-icon a:nth-child(5){
+#s6-icon a:nth-child(5) {
     background-image: url(../img/twitter10.png);
     width: 27px;
     height: 21px;
@@ -941,31 +944,31 @@ h5{
     margin-top: 2px;
 }
 
-#s6-icon a:nth-child(5):hover{
+#s6-icon a:nth-child(5):hover {
     background-image: url(../img/twitter1.png);
     transition: all 0.3s ease-in-out;
 }
 
-#s6-icon a:nth-child(6){
+#s6-icon a:nth-child(6) {
     background-image: url(../img/instagram10.png);
     width: 25px;
     height: 25px;
     float: left;
 }
 
-#s6-icon a:nth-child(6):hover{
+#s6-icon a:nth-child(6):hover {
     background-image: url(../img/instagram1.png);
     transition: all 0.3s ease-in-out;
 }
 
-#s7-left{
+#s7-left {
     position: absolute;
-    height:217px;
-    left:0;
+    height: 217px;
+    left: 0;
     bottom: 0;
 }
 
-#s7-left div{
+#s7-left div {
     background-image: url(../img/s6.gif);
     width: 188px;
     height: 217px;
@@ -973,33 +976,71 @@ h5{
     bottom: 3rem;
 }
 
-#s7-left span{
+#s7-left span {
     position: absolute;
     font-size: 1.8rem;
 }
 
-#s7-left span:nth-child(1){
+#s7-left span:nth-child(1) {
     bottom: 60px;
-    left:1rem;
+    left: 1rem;
 }
 
-#s7-left span:nth-child(2){
+#s7-left span:nth-child(2) {
     bottom: 60px;
-    left:13.5rem;
+    left: 13.5rem;
 }
 
-#s7-bottom{
+#s7-bottom {
     position: absolute;
-    height:2.5rem;
-    width:40rem;
+    height: 2.5rem;
+    width: 40rem;
     background-color: #e69c9d;
     bottom: 0;
 }
 
-#s7-back{
+#s7-back {
     position: absolute;
-    right:2rem;
-    bottom:3rem; 
-    color:#898888;
-    font-size:1.5rem;
+    right: 2rem;
+    bottom: 3rem;
+    color: #898888;
+    font-size: 1.5rem;
+}
+
+
+/****** Say Hi *****/
+
+#h-left {
+    width: 30rem;
+    position: absolute;
+    top: 32rem;
+    left: 5rem;
+}
+
+#h-left p {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#h-right {
+    background-image: url(../img/h-pic.png);
+    width: 430px;
+    height: 298px;
+    position: absolute;
+    right: 6.5rem;
+    top: 10rem;
+}
+
+#r3 {
+    position: absolute;
+    width: 35px;
+    right:8rem;
+    top: 43rem;
+}
+
+#iu3 {
+    position: absolute;
+    width: 40px;
+    left:3rem;
+    top:30rem;
 }

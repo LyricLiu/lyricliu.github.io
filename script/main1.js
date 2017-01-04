@@ -39,7 +39,7 @@
                     setTimeout(function() {
                         $("#s3-right-text").fadeIn(1000);
                         $("#s3-right-text").addClass('animated fadeInUp');
-                        $("#s3-pic").fadeIn(1000);
+                        $("#s3-pic").show();
                         $("#s3-pic").addClass('animated zoomIn');
                     }, 300);
                     setTimeout(function() {
