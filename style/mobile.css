@@ -820,6 +820,7 @@ h5{
     position: absolute;
     top:16rem;
     left:2rem;
+    z-index: 999;
     display: none;
 }
 
