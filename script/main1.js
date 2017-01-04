@@ -71,6 +71,20 @@
                 }
             },
         });
+        setTimeout(function() {
+            var winH = $(window).height();
+            var winW = $(window).width();
+            var w = winH / (16 / 9)
+
+            $('body').css({
+                width: w,
+                marginLeft: (winW - w) / 2
+            })
+
+            $('html').css({
+                fontSize: 16 * w / winW
+            })
+        }, 1500)
     });
 
     $('#menu-icon').click(function() {
