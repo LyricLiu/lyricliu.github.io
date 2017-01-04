@@ -30,11 +30,11 @@
                 if (index == 3) {
                     $("#s3-block").addClass('active');
                     $("#s3-gif1").show();
-                    $("#s3-right-icon").addClass('animated flipInX');
-                    $("#s3-right-icon").show();
                     setTimeout(function() {
                         $('#s3-gif1').hide();
                         $('#s3-gif2').show();
+                        $("#s3-right-icon").show();
+                        $("#s3-right-icon").addClass('animated flipInX');
                     }, 3000);
                     setTimeout(function() {
                         $("#s3-right-text").fadeIn(1000);
@@ -71,20 +71,24 @@
                 }
             },
         });
-        setTimeout(function() {
-            var winH = $(window).height();
-            var winW = $(window).width();
-            var w = winH / (16 / 9)
+        var isiphone = /iPhone/i.test(window.navigator.userAgent);
+        if (!isiphone) {
+            setTimeout(function() {
+                var winH = $(window).height();
+                var winW = $(window).width();
+                var w = winH / (16 / 9)
 
-            $('body').css({
-                width: w,
-                marginLeft: (winW - w) / 2
-            })
+                $('body').css({
+                    width: w,
+                    marginLeft: (winW - w) / 2
+                })
 
-            $('html').css({
-                fontSize: 16 * w / winW
-            })
-        }, 1500)
+                $('html').css({
+                    fontSize: 16 * w / winW
+                })
+            }, 1500);
+        }
+
     });
 
     $('#menu-icon').click(function() {
