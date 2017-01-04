@@ -674,10 +674,10 @@ h3 {
     width: 386px;
     height: 246px;
     background-image: url(../img/s3-2.png);
-    position: relative;
+    position: absolute;
     left: 3rem;
     top: 4rem;
-    z-index: 999;
+    z-index: 9999;
     display: none;
 }
 
@@ -825,7 +825,7 @@ h5 {
     position: absolute;
     top: 16rem;
     left: 2rem;
-    z-index: 9999;
+    z-index: 999;
     display: none;
 }
 
