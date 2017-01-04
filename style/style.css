@@ -888,6 +888,15 @@ h3 {
 
 /*   Who I am  */
 
+#resume{
+    position: absolute;
+    top:350px;
+    right:120px;
+    color:#e69c9d;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
 #p-wrap2{
     display: none;
     position: relative;
