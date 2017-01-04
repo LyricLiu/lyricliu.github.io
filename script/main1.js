@@ -33,8 +33,6 @@
                     setTimeout(function() {
                         $('#s3-gif1').hide();
                         $('#s3-gif2').show();
-                        $("#s3-right-icon").show();
-                        $("#s3-right-icon").addClass('animated flipInX');
                     }, 3000);
                     setTimeout(function() {
                         $("#s3-right-text").fadeIn(1000);
@@ -71,24 +69,25 @@
                 }
             },
         });
-        var isiphone = /iPhone/i.test(window.navigator.userAgent);
-        if (!isiphone) {
-            setTimeout(function() {
-                var winH = $(window).height();
-                var winW = $(window).width();
-                var w = winH / (16 / 9)
 
-                $('body').css({
-                    width: w,
-                    marginLeft: (winW - w) / 2
-                })
-
-                $('html').css({
-                    fontSize: 16 * w / winW
-                })
-            }, 1500);
+        var winH = $(window).height();
+        var winW = $(window).width();
+        if(winH/winW < (4/3)){
+            $("#s1-left p").css("font-size", "1rem");
+            $("#s2 p").css("font-size", "1.2rem");
+            $("#s2-bottom-right").css("top", "16rem");
+            $("#s2-bottom-left").css("top", "32rem");
+            $("#s3-h4").remove();
+            $("#s3-left-text").css("top", "39rem");
+            $("#s4 p").css("font-size", "1rem");
+            $("#s4 h5").css("font-size", "1.3rem");
+            $("#h4 h2").css("font-size", "1rem");
+            $("#s4-left").css("top", "1rem");
+            $("#s4-right").css("top", "31rem");
+            $("#s6-right").css("top", "-3rem");
+            $("#s6-icon").css("top", "28rem");
+            $("#s6 h2").css("top", "30rem");
         }
-
     });
 
     $('#menu-icon').click(function() {

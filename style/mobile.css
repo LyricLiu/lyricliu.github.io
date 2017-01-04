@@ -680,10 +680,9 @@ h3 {
     background-image: url(../img/s3-2.png);
     background-size: 100% 100%;
     position: absolute;
-    left: 3rem;
-    top: 4rem;
+    left: 8rem;
+    top: 9rem;
     z-index: 9999;
-    display: none;
 }
 
 #s3-gif1 {
@@ -826,6 +825,7 @@ h5 {
 #s5-line.active {
     height: 45rem;
     transition: all 1s ease-in-out;
+    z-index: -1;
 }
 
 #s5-left {
