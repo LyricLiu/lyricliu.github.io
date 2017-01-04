@@ -48,6 +48,27 @@
                         $("#s3-left-text").addClass('animated fadeInUp');
                     }, 600);
                 }
+                if (index == 4) {
+                    $("#s4-line").addClass('active');
+                    setTimeout(function() {
+                        $("#s4-right").fadeIn(1000);
+                        $("#s4-right").addClass('animated fadeInUp');
+                    }, 300);
+                }
+                if (index == 5) {
+                    $("#s5-line").addClass('active');
+                    $("#s5-left").show();
+                    $("#s5-left").addClass('animated flipInX');
+                    setTimeout(function() {
+                        $("#s5-right").fadeIn(1000);
+                        $("#s5-right").addClass('animated fadeInUp');
+                        $("#s6-upper").fadeIn(1000);
+                    }, 600);
+                }
+                if (index == 6) {
+                    $("#s6-icon").fadeIn(1000);
+                    $("#s6-icon").addClass('animated fadeInUp');
+                }
             },
         });
     });
