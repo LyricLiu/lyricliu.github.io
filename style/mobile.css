@@ -457,18 +457,20 @@ h3 {
 /******* Who I am *******/
 
 #o {
-    width: 39px;
-    height: 39px;
+    width: 2.43rem;
+    height: 2.43rem;
     background-image: url(../img/o.png);
+    background-size: 100% 100%;
     position: absolute;
     left: 4rem;
     top: 9rem;
 }
 
 #iu1 {
-    width: 78px;
-    height: 62px;
+    width: 4.87rem;
+    height: 3.87rem;
     background-image: url(../img/iu1.png);
+    background-size: 100% 100%;
     position: absolute;
     right: 7rem;
     top: 11rem;
@@ -504,31 +506,31 @@ h3 {
 }
 
 #s-line1-cover {
-    height: 1.5px;
-    width: 600px;
-    margin-bottom: 15px;
-    margin-top: 10px;
+    height: 0.09rem;
+    width: 37.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.62rem;
     position: relative;
     overflow: hidden;
 }
 
 #s-line1 {
-    height: 1.5px;
+    height: 0.09rem;
     width: 0;
     background-color: #756d88;
 }
 
 #s-line1.active {
-    width: 600px;
-    height: 1.5px;
+    width: 37.5rem;
+    height: 0.09rem;
     background-color: #756d88;
     transition: width 0.6s ease-in-out;
 }
 
 #s1-left p {
-    width: 550px;
+    width: 34.37rem;
     font-size: 1.8rem;
-    padding: 5px;
+    padding: 0.31rem;
     display: none;
     line-height: 2rem;
 }
@@ -538,18 +540,20 @@ h3 {
 }
 
 #s1-right {
-    width: 312px;
-    height: 331px;
+    width: 19.5rem;
+    height: 20.68rem;
     background-image: url(../img/s1.gif);
+    background-size: 100% 100%;
     position: absolute;
     right: 11rem;
     top: 9rem;
 }
 
 #s2-upper-left {
-    width: 378px;
-    height: 315px;
+    width: 23.62rem;
+    height: 19.69rem;
     background-image: url(../img/s2-w.png);
+    background-size: 100% 100%;
     position: absolute;
     left: 0;
     top: 1rem;
@@ -559,11 +563,11 @@ h3 {
 
 #s-line2 {
     position: absolute;
-    height: 1.5px;
+    height: 0.09rem;
     width: 0;
     background-color: #756d88;
     top: 9rem;
-    left: 100px;
+    left: 6.25rem;
 }
 
 #s-line2.active {
@@ -573,7 +577,7 @@ h3 {
 
 #s2-upper-right {
     position: absolute;
-    width: 330px;
+    width: 20.62rem;
     right: 2rem;
     top: 9.5rem;
 }
@@ -596,7 +600,7 @@ h3 {
 
 #s2-bottom-right {
     position: absolute;
-    padding: 20px 0 0 20px;
+    padding: 1.25rem 0 0 1.25rem;
     overflow: hidden;
     width: 35rem;
     left: 2rem;
@@ -606,7 +610,7 @@ h3 {
 
 #s2-bottom-left {
     position: absolute;
-    padding: 20px 0 0 20px;
+    padding: 1.25rem 0 0 1.25rem;
     overflow: hidden;
     width: 35rem;
     left: 2rem;
@@ -616,18 +620,18 @@ h3 {
 
 #s2-bottom-left h4,
 #s2-bottom-right h4 {
-    padding-top: 10px;
-    margin-left: 35px;
+    padding-top: 0.62rem;
+    margin-left: 2.19rem;
 }
 
 #s2-bottom-left div,
 #s2-bottom-right div {
     float: left;
-    margin: 20px 40px;
+    margin: 1.25rem 2.5rem;
 }
 
 #s2-bottom-left div {
-    margin-right: 80px;
+    margin-right: 5rem;
 }
 
 #s3 h2 {
@@ -641,7 +645,7 @@ h3 {
 }
 
 #s3-block {
-    width: 56px;
+    width: 3.5rem;
     height: 5rem;
     position: absolute;
     right: 2rem;
@@ -656,24 +660,25 @@ h3 {
 
 #s3-left {
     position: absolute;
-    left: 10px;
-    width: 370px;
-    height: 470px;
-    top: 190px;
+    left: 0.62rem;
+    width: 23.12rem;
+    height: 29.37rem;
+    top: 11.87rem;
 }
 
 #s3-right {
     position: absolute;
     right: 10rem;
-    width: 386px;
-    height: 470px;
+    width: 24.12rem;
+    height: 29.37rem;
     top: 5rem;
 }
 
 #s3-right-icon {
-    width: 386px;
-    height: 246px;
+    width: 24.12rem;
+    height: 15.27rem;
     background-image: url(../img/s3-2.png);
+    background-size: 100% 100%;
     position: absolute;
     left: 3rem;
     top: 4rem;
@@ -682,9 +687,10 @@ h3 {
 }
 
 #s3-gif1 {
-    width: 920px;
-    height: 450px;
+    width: 57.5rem;
+    height: 28.12rem;
     background-image: url(../img/s7.gif);
+    background-size: 100% 100%;
     position: absolute;
     right: -20rem;
     top: 4rem;
@@ -692,9 +698,10 @@ h3 {
 }
 
 #s3-gif2 {
-    width: 920px;
-    height: 450px;
+    width: 57.5rem;
+    height: 28.12rem;
     background-image: url(../img/s8.gif);
+    background-size: 100% 100%;
     position: absolute;
     right: -20rem;
     top: 4rem;
@@ -702,9 +709,10 @@ h3 {
 }
 
 #s3-left-text {
-    width: 362px;
-    height: 165px;
+    width: 22.62rem;
+    height: 10.31rem;
     background-image: url(../img/s3-1text.png);
+    background-size: 100% 100%;
     position: absolute;
     top: 43rem;
     left: 6rem;
@@ -722,12 +730,13 @@ h3 {
 }
 
 #s3-pic {
-    width: 118px;
-    height: 88px;
+    width: 7.37rem;
+    height: 5.5rem;
     background-image: url(../img/s3-3.png);
+    background-size: 100% 100%;
     position: absolute;
     top: 38rem;
-    right: 2px;
+    right: 0.125rem;
     z-index: 999;
     display: none;
 }
@@ -752,9 +761,10 @@ h3 {
 }
 
 #s4-left {
-    width: 486px;
-    height: 460px;
+    width: 30.37rem;
+    height: 28.75rem;
     background-image: url(../img/s3.gif);
+    background-size: 100% 100%;
     position: absolute;
     top: 7rem;
     left: 5rem;
@@ -762,7 +772,7 @@ h3 {
 
 #s4-line {
     position: absolute;
-    height: 1.5px;
+    height: 0.09rem;
     background-color: #756d88;
     top: 7rem;
     left: 0;
@@ -804,7 +814,7 @@ h5 {
 }
 
 #s5-line {
-    width: 1.5px;
+    width: 0.09rem;
     position: absolute;
     left: 20rem;
     top: 0;
@@ -819,9 +829,10 @@ h5 {
 }
 
 #s5-left {
-    width: 318px;
-    height: 296px;
+    width: 19.87rem;
+    height: 18.5rem;
     background-image: url(../img/s5.png);
+    background-size: 100% 100%;
     position: absolute;
     top: 16rem;
     left: 2rem;
@@ -841,16 +852,17 @@ h5 {
 }
 
 #s5-upper {
-    width: 188px;
-    height: 110px;
+    width: 11.75rem;
+    height: 6.87rem;
     background-image: url(../img/s4.gif);
+    background-size: 100% 100%;
     position: absolute;
     right: 4rem;
     top: 38rem;
 }
 
 #s6-upper {
-    height: 11px;
+    height: 0.69rem;
     width: 17rem;
     background-color: #e7d9c7;
     position: absolute;
@@ -869,9 +881,10 @@ h5 {
 }
 
 #s6-right {
-    width: 560px;
-    height: 700px;
+    width: 35rem;
+    height: 43.75rem;
     background-image: url(../img/s5.gif);
+    background-size: 100% 100%;
     position: absolute;
     right: -9rem;
     top: 2rem;
@@ -891,89 +904,102 @@ h5 {
 
 #s6-icon a:nth-child(1) {
     background-image: url(../img/dribbble10.png);
-    width: 25px;
-    height: 24px;
+    background-size: 100% 100%;
+    width: 1.56rem;
+    height: 1.56rem;
     float: left;
 }
 
 #s6-icon a:nth-child(1):hover {
     background-image: url(../img/dribbble1.png);
+    background-size: 100% 100%;
     transition: all 0.3s ease-in-out;
 }
 
 #s6-icon a:nth-child(2) {
     background-image: url(../img/vimeo10.png);
-    width: 25px;
-    height: 20px;
+    background-size: 100% 100%;
+    width: 1.56rem;
+    height: 1.25rem;
     float: left;
-    margin-top: 2px;
+    margin-top: 0.125rem;
 }
 
 #s6-icon a:nth-child(2):hover {
     background-image: url(../img/vimeo1.png);
+    background-size: 100% 100%;
     transition: all 0.3s ease-in-out;
 }
 
 #s6-icon a:nth-child(3) {
     background-image: url(../img/github10.png);
-    width: 23px;
-    height: 25px;
+    background-size: 100% 100%;
+    width: 1.44rem;
+    height: 1.56rem;
     float: left;
 }
 
 #s6-icon a:nth-child(3):hover {
     background-image: url(../img/github1.png);
+    background-size: 100% 100%;
     transition: all 0.3s ease-in-out;
 }
 
 #s6-icon a:nth-child(4) {
     background-image: url(../img/facebook10.png);
-    width: 24px;
-    height: 24px;
+    background-size: 100% 100%;
+    width: 1.5rem;
+    height: 1.5rem;
     float: left;
 }
 
 #s6-icon a:nth-child(4):hover {
     background-image: url(../img/facebook1.png);
+    background-size: 100% 100%;
     transition: all 0.3s ease-in-out;
 }
 
 #s6-icon a:nth-child(5) {
     background-image: url(../img/twitter10.png);
-    width: 27px;
-    height: 21px;
+    background-size: 100% 100%;
+    width: 1.69rem;
+    height: 1.31rem;
     float: left;
-    margin-top: 2px;
+    margin-top: 0.125rem;
 }
 
 #s6-icon a:nth-child(5):hover {
     background-image: url(../img/twitter1.png);
+    background-size: 100% 100%;
     transition: all 0.3s ease-in-out;
 }
 
 #s6-icon a:nth-child(6) {
     background-image: url(../img/instagram10.png);
-    width: 25px;
-    height: 25px;
+    background-size: 100% 100%;
+    width: 1.56rem;
+    height: 1.56rem;
     float: left;
 }
 
 #s6-icon a:nth-child(6):hover {
     background-image: url(../img/instagram1.png);
+    background-size: 100% 100%;
     transition: all 0.3s ease-in-out;
 }
 
 #s7-left {
     position: absolute;
-    height: 217px;
+    height: 13.56rem;
     left: 0;
     bottom: 0;
 }
 
 #s7-left div {
     background-image: url(../img/s6.gif);
-    width: 188px;
-    height: 217px;
+    background-size: 100% 100%;
+    width: 11.75rem;
+    height: 13.56rem;
     margin-left: 2rem;
     bottom: 3rem;
 }
@@ -984,12 +1010,12 @@ h5 {
 }
 
 #s7-left span:nth-child(1) {
-    bottom: 60px;
+    bottom: 3.75rem;
     left: 1rem;
 }
 
 #s7-left span:nth-child(2) {
-    bottom: 60px;
+    bottom: 3.75rem;
     left: 13.5rem;
 }
 
