@@ -678,6 +678,7 @@ h3 {
     left: 3rem;
     top: 4rem;
     z-index: 999;
+    display: none;
 }
 
 #s3-gif1 {
@@ -808,6 +809,7 @@ h5 {
     left: 20rem;
     top: 0;
     height: 0;
+    z-index: 1;
     background-color: #756d88;
 }
 
@@ -1043,4 +1045,11 @@ h5 {
     width: 40px;
     left:3rem;
     top:30rem;
+}
+
+/******* day by day *******/
+
+#wrap-day{
+    position: relative;
+    top:10rem;
 }

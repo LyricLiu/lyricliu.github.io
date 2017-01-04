@@ -29,7 +29,7 @@
                 }
                 if (index == 3) {
                     $("#s3-block").addClass('active');
-                    $("#s3-right-icon").show();
+                    $("#s3-right-icon").fadeIn(1000);
                     $("#s3-right-icon").addClass('animated flipInX');
                     $("#s3-gif1").show();
                     setTimeout(function() {
