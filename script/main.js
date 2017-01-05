@@ -437,6 +437,13 @@
         }, 1000);
     }
 
+    function hideWrap6() {
+        $('#p-wrap6').fadeOut(800);
+        setTimeout(function() {
+            $('iframe').attr("src", "");
+        }, 1000);
+    }
+
 
     $("#lyric-logo").click(function() {
         showWrap0();
@@ -445,6 +452,7 @@
         hideWrap3();
         hideWrap4();
         hideWrap5();
+        hideWrap6();
     });
 
     $("#menu-bar1").click(function() {
@@ -457,6 +465,7 @@
         hideWrap3();
         hideWrap4();
         hideWrap5();
+        hideWrap6();
         $('#menu-icon').removeClass('open');
         $("#menu-bar").removeClass('active');
         setTimeout(function() {
@@ -476,6 +485,7 @@
         hideWrap3();
         hideWrap4();
         hideWrap5();
+        hideWrap6();
         $('#menu-icon').removeClass('open');
         $("#menu-bar").removeClass('active');
         setTimeout(function() {
@@ -495,6 +505,7 @@
         showWrap3();
         hideWrap4();
         hideWrap5();
+        hideWrap6();
         $('#menu-icon').removeClass('open');
         $("#menu-bar").removeClass('active');
         setTimeout(function() {
@@ -514,6 +525,7 @@
         hideWrap3();
         showWrap4();
         hideWrap5();
+        hideWrap6();
         $('#menu-icon').removeClass('open');
         $("#menu-bar").removeClass('active');
         setTimeout(function() {
@@ -534,6 +546,7 @@
         hideWrap3();
         hideWrap4();
         hideWrap5();
+        hideWrap6();
     });
 
     $("#navi2").click(function() {
@@ -546,6 +559,7 @@
         hideWrap3();
         hideWrap4();
         hideWrap5();
+        hideWrap6();
     });
 
     $("#navi3").click(function() {
@@ -558,6 +572,7 @@
         showWrap3();
         hideWrap4();
         hideWrap5();
+        hideWrap6();
     });
 
     $("#navi4").click(function() {
@@ -570,6 +585,7 @@
         hideWrap3();
         showWrap4();
         hideWrap5();
+        hideWrap6();
     });
 
     /*  page content link   */
@@ -578,6 +594,13 @@
         transAnim();
         showWrap1();
         hideWrap5();
+
+    });
+
+    $("#page-close1").click(function() {
+        transAnim();
+        showWrap3();
+        hideWrap6();
 
     });
 
@@ -724,6 +747,14 @@
         $('iframe').attr("src", "./pages/cosmos.html");
     });
 
+    /****  Day by day link  ****/
+    $("#day1").click(function() {
+        hideWrap3();
+        setTimeout(function() {
+            $('#p-wrap6').show();
+        }, 1000);
+        $('iframe').attr("src", "./pages/day1.html");
+    });
 
 
     jQuery.easing['easeInOutExpo'] = jQuery.easing['swing'];

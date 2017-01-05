@@ -1582,6 +1582,10 @@ h5{
     top:320px;
 }
 
+#d1 {
+    background: url(../img/d1.png) no-repeat center;
+}
+
 /*   Contact Me    */
 
 #p-wrap4{
@@ -1644,7 +1648,16 @@ h5{
     display:none;
 }
 
-#page-close{
+#p-wrap6{
+    position: relative;
+    height:85%;
+    width:100%;
+    top:15%;
+    display:none;
+}
+
+
+.closeB{
     background-image: url(../img/page-close.png);
     width: 30px;
     height: 30px;
@@ -1656,7 +1669,7 @@ h5{
     cursor: pointer;
 }
 
-#page-close:hover{
+.closeB:hover{
     opacity: 1;
     transition: all 0.3s ease-in-out;
 }

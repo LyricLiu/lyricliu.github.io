@@ -1079,3 +1079,7 @@ h5 {
     position: relative;
     top:10rem;
 }
+
+#d1 {
+    background: url(../img/d1.png) no-repeat center;
+}

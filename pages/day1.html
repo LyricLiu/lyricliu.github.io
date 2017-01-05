@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>How I design this Website</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../style/page.css">
+    <script src="../script/jquery.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="left">
+            <div id="left-text">
+                <h1>lyricliu .com</h1>
+                <div id="line"></div>
+                <p>How I design this website</p>
+                <span>12/2016</span>
+            </div>
+        </div>
+        <div id="right">
+            <img src="../img/page/day1-1.gif">
+            <div class="para">
+                <p>There´s no better way to end the year 2016 than working for my website <span>lyricliu.com</span>!</p>
+                <p>I spent the whole Christmas holiday to built this website. From VI/UI design to web development, I don't remember how many hours I have spent on it, but I still remember every moment my little idea has come true on the screen.</p>
+                <p>I am very happy to present you, here -- how I design this website.</p>
+            </div>
+            <div class="para">
+                <h2>Identity design</h2>
+                <div class="line1"></div>
+                <p>I started up by designing my logo. Initially, I tried to find some pattern to represent myself. But I failed to satisfy myself with the patterns I illustrated. Then, I asked myself, why not just use my name! I spent the whole day scribbling my name on scratch paper. At the end of the day, I surprised to find the two “L” in my name could form a rectangle neatly! Yep, that is what you can see here. I pretty love it and even made several different color versions.</p>
+            </div>
+            <img src="../img/page/day1-2.png">
+            <div class="para">
+                <p>I love pink, as always. Even though I tried to persuade myself to build a “professional” and “minimalist” website, I ended up following my heart. Below is my color palette.</p>
+            </div>
+            <img src="../img/page/day1-3.png">
+            <div class="para">
+                <p>For the decorative patterns. I broke up my logo into 4 pieces. How can Lyric's work has no illustration! Then, I illustrated some cute patterns.</p>
+            </div>
+            <img src="../img/page/day1-4.png">
+            <div class="para">
+                <h2>Development</h2>
+                <div class="line1"></div>
+                <p>Actually, this was the first time for me to develop such a complex static website. There were a great deal of animations and special effects which tortured me a lot.</p>
+                <p>The hardest part was to make my website responsible to different kinds of screens.</p>
+                <p>At least, for now, I guess my website could survive the mobile devices and the computers.</p>
+                <p>Here is how it looks like in mobile phones: </p>
+            </div>
+            <img src="../img/page/day1-5.png">
+            <div class="para">
+                <p>That's it. Hope you like my website!</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        function adjust() {
+            $("img").width($("#right").width());
+            $("iframe").width($("#right").width());
+            $("iframe").height(($("#right").width()) * 551 / 980);
+        }
+        window.onload = function() {
+            window.onresize = adjust;
+            adjust();
+        }
+    });
+    </script>
+    <script src="https://use.typekit.net/fwz5ooq.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
+</body>
+
+</html>
