@@ -45,37 +45,56 @@
             <img src="../img/page/ustay6.png">
             <div class="para">
                 <p>Three main modules:</p>
-                <p><label>Him/Her module</label> : View virtual character of your lover including his/her weather, mood, schedule, etc.</p>
-                <p><label>Me module</label> : Customize your own character, change your mood, update your schedule, etc.</p>
-                <p><label>Us module</label> : Upload files for share. (Video, Text Message, Picture)</p>
+                <p>
+                    <label>Him/Her module</label> : View virtual character of your lover including his/her weather, mood, schedule, etc.</p>
+                <p>
+                    <label>Me module</label> : Customize your own character, change your mood, update your schedule, etc.</p>
+                <p>
+                    <label>Us module</label> : Upload files for share. (Video, Text Message, Picture)</p>
             </div>
             <div class="para">
                 <h2>Selected UI</h2>
                 <div class="line1"></div>
             </div>
             <img src="../img/page/ustay7.png">
-    </div>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        function adjust() {
-            $("img").width($("#right").width());
-            $("iframe").width($("#right").width());
-            $("iframe").height(($("#right").width()) * 551 / 980);
-        }
-        window.onload = function() {
-            window.onresize = adjust;
-            adjust();
-        }
-    });
-    </script>
-    <script src="https://use.typekit.net/fwz5ooq.js"></script>
-    <script>
-    try {
-        Typekit.load({
-            async: true
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            function adjust() {
+                $("img").width($("#right").width());
+                $("iframe").width($("#right").width());
+                $("iframe").height(($("#right").width()) * 551 / 980);
+            }
+            window.onload = function() {
+                window.onresize = adjust;
+                adjust();
+            }
         });
-    } catch (e) {}
-    </script>
+        </script>
+        <script src="https://use.typekit.net/fwz5ooq.js"></script>
+        <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+        </script>
+        <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-89851924-1', 'auto');
+        ga('send', 'pageview');
+        </script>
 </body>
 
 </html>
