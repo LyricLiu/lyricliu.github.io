@@ -5,8 +5,126 @@
     <meta charset="utf-8" />
     <title>loading</title>
 </head>
-
 <body>
+    <style type="text/css">
+        .loading-process{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .loading, .loaded{
+            position: absolute;
+            width: 10.7rem;
+            height: 6.69rem;
+            margin: auto 0 auto -5.35rem;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+
+            box-sizing: border-box;
+
+            transition: width 0.3s;
+            -moz-transition: width 0.3s;
+            -webkit-transition: width 0.3s;
+            -o-transition: width 0.3s;
+        }
+
+        .loading{
+            z-index: 1;
+            background-image: url(./img/loadingbg.png);
+            background-size: 10.7rem 6.69rem;
+            background-position: left top;
+        }
+
+        .loaded{
+            width: 0;
+            z-index: 2;
+            border-right: 1px solid #FFF;
+            background-image: url(./img/loading.png);
+            background-size: 10.7rem 6.69rem;
+            background-position: left top;   
+        }
+    </style>
+    <script type="text/javascript" src="http://lyricliu.com/script/jquery.js"></script>
+</head>
+<body>
+    <div class="loading-process">
+        <div class="loading"></div>
+        <div class="loaded"></div>
+    </div>
+    <script type="text/javascript">
+        (function(){
+            var loadArr = [
+                {
+                    type: 'image',
+                    src: 'http://img0.imgtn.bdimg.com/it/u=2736224205,4008379759&fm=21&gp=0.jpg'
+                },
+                {
+                    type: 'video',
+                    src: 'http://www.w3school.com.cn/example/html5/mov_bbb.ogg'
+                },
+                {
+                    type: 'image',
+                    src: 'http://img.ithome.com/newsuploadfiles/2014/12/20141216_124850_903.jpg'
+                }
+            ];
+
+            var preLoad = function(loadArr, loadingFn){
+                var loaded = 0;
+                var loadResolve = new Promise(function(resolve, reject){
+                    var isLoadFinish = function(){
+                        loadingFn && loadingFn({
+                            loaded: loaded,
+                            total: loadArr.length
+                        });
+                        
+                        if(loaded >= loadArr.length){
+                            resolve();
+                        }
+                    };
+
+                    loadArr.forEach(function(item){
+                        if(item.type === 'image'){
+                            var img = new Image();
+                            img.onload = function(){
+                                loaded++;
+                                isLoadFinish();
+                            };
+
+                            img.src = item.src;
+                        }
+                        else if(item.type === 'video'){
+                            var video = new Audio();
+                            video.onloadstart = function(){
+                                loaded++;
+                                isLoadFinish();
+                            };
+
+                            video.src = item.src;
+                        }
+                    });
+                })
+                return loadResolve;
+            };
+
+            var loadResolve = preLoad(loadArr, function(data){
+                var $loading = $('.loading');
+                var $loaded = $('.loaded')
+                var w = $loading.width();
+
+                $loaded.css({
+                    width: w * data.loaded / data.total
+                })
+            })
+
+            .then(function(){
+                setTimeout(function(){
+                    $('.loading-process').hide();
+                }, 500);
+            });
+        }())
+    </script>
     <script type="text/javascript">
     (function() {
         var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(window.navigator.userAgent);
@@ -34,6 +152,7 @@
     ga('create', 'UA-89851924-1', 'auto');
     ga('send', 'pageview');
     </script>
+
 </body>
 
 </html>
