@@ -56,23 +56,6 @@
         </div>
         <script type="text/javascript">
         (function() {
-
-            var fs = require('fs');
-            var configList = [];
-
-            fs.readdir('./', function(err, list) {
-                list.forEach(function(item) {
-                    if (item.match(/png|gif|jpg/)) {
-                        configList.push({
-                            type: 'image',
-                            src: './img/' + item
-                        });
-                    }
-                });
-
-                fs.writeFile('config.json', JSON.stringify(configList, null, 4));
-            })
-
             var loadArr = [{
                 type: 'image',
                 src: './img/w1.png'
@@ -104,6 +87,9 @@
                 type: 'image',
                 src: './img/s3.gif'
             }, {
+                type: 'image',
+                src: './img/s1.gif'
+            },{
                 type: 'video',
                 src: './video/begin1.mp4'
             }, {
@@ -161,19 +147,15 @@
             .then(function() {
                 setTimeout(function() {
                     $('.loading-process').hide();
+                    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(window.navigator.userAgent);
+
+                    if (isMobile) {
+                        window.location.href = './mobile.html';
+                    } else {
+                        window.location.href = './pc.html';
+                    }
                 }, 500);
             });
-        }())
-        </script>
-        <script type="text/javascript">
-        (function() {
-            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(window.navigator.userAgent);
-
-            if (isMobile) {
-                window.location.href = './mobile.html';
-            } else {
-                window.location.href = './pc.html';
-            }
         }())
         </script>
         <script>
