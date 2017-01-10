@@ -376,6 +376,7 @@ header {
 
 .begin{
     position: absolute;
+    bottom: 0;
 }
 
 #video-wrap2 {
