@@ -539,6 +539,7 @@ label {
     padding: 0;
     margin: 0;
     display: none;
+    cursor:pointer;
 }
 
 #p1 {
