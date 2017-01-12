@@ -27,7 +27,7 @@
                 $("#page-close").css("left", "300px");
             } else {
                 $(".begin").css("left", "calc(50% - 720px)");
-                $(".begin").css("top", "20%");
+                $(".begin").css("top", "18%");
                 $("#type-text").css("width", "1180px");
                 $("#type-text").css("left", "calc(50% - 590px)");
                 $("#p-wrap0").css("width", "1440px");
