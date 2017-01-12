@@ -397,7 +397,7 @@ header {
     font-family: brandon-grotesque, sans-serif;
     color: #5f576e;
     position: absolute;
-    bottom: 20%;
+    top:75%;
     left: 9%;
     font-size: 1.9em;
     width: 82%;
