@@ -1537,7 +1537,6 @@ h5{
 #p-wrap3-wrap{
     position: relative;
     top:250px;
-    height:600px;
 }
 
 .d-text{
@@ -1586,6 +1585,10 @@ h5{
 
 #d1 {
     background: url(../img/d1.png) no-repeat center;
+}
+
+#d2 {
+    background: url(../img/d2.png) no-repeat center;
 }
 
 /*   Contact Me    */

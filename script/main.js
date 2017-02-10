@@ -759,6 +759,14 @@
         $('iframe').attr("src", "./pages/day1.html");
     });
 
+    $("#day2").click(function() {
+        hideWrap3();
+        setTimeout(function() {
+            $('#p-wrap6').show();
+        }, 1000);
+        $('iframe').attr("src", "./pages/day2.html");
+    });
+
 
     jQuery.easing['easeInOutExpo'] = jQuery.easing['swing'];
 
