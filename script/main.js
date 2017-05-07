@@ -649,6 +649,11 @@
         $('iframe').attr("src", "./pages/ustay.html");
     });
 
+    $("#fish").click(function() {
+        window.open('http://lyricliu.com/hci_hw4');
+       
+    });
+
     $("#superhero").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
@@ -703,11 +708,7 @@
     });
 
     $("#p6").click(function() {
-        hideWrap0();
-        setTimeout(function() {
-            $('#p-wrap5').show();
-        }, 1000);
-        $('iframe').attr("src", "./pages/superhero.html");
+        window.open('http://lyricliu.com/hci_hw4');
     });
 
     $("#p7").click(function() {
