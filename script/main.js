@@ -651,7 +651,10 @@
 
     $("#fish").click(function() {
         window.open('http://lyricliu.com/hci_hw4');
-       
+    });
+
+    $("#isola").click(function() {
+        window.open('http://lyricliu.com/isola_web');
     });
 
     $("#superhero").click(function() {
@@ -665,6 +668,7 @@
         $('#p-wrap5').show();
         $('iframe').attr("src", "./pages/draw.html");
     });
+
 
     /*  home page content link   */
     $("#p1").click(function() {
@@ -720,11 +724,7 @@
     });
 
     $("#p8").click(function() {
-        hideWrap0();
-        setTimeout(function() {
-            $('#p-wrap5').show();
-        }, 1000);
-        $('iframe').attr("src", "./pages/tea.html");
+        window.open('http://lyricliu.com/isola_web');
     });
 
     $("#p9").click(function() {
@@ -732,7 +732,7 @@
         setTimeout(function() {
             $('#p-wrap5').show();
         }, 1000);
-        $('iframe').attr("src", "./pages/flawed.html");
+        $('iframe').attr("src", "./pages/draw.html");
     });
 
     $("#p10").click(function() {

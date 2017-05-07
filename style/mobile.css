@@ -417,7 +417,9 @@ a {
     background: url(../img/w7.png) no-repeat center;
 }
 
-#w8 {}
+#w8 {
+    background: url(../img/w8.png) no-repeat center;
+}
 
 #w9 {
     background: url(../img/w9.png) no-repeat center;
@@ -425,6 +427,14 @@ a {
 
 #w10 {
     background: url(../img/w10.png) no-repeat center;
+}
+
+#w11 {
+    background: url(../img/w11.png) no-repeat center;
+}
+
+#w12 {
+    background: url(../img/w12.png) no-repeat center;
 }
 
 h3 {
