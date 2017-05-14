@@ -688,11 +688,7 @@
     });
 
     $("#p3").click(function() {
-        hideWrap0();
-        setTimeout(function() {
-            $('#p-wrap5').show();
-        }, 1000);
-        $('iframe').attr("src", "./pages/glassia.html");
+        window.open('http://globalgamejam.org/2017/games/eventide');
     });
 
     $("#p4").click(function() {
