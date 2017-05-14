@@ -96,6 +96,22 @@ iframe{
     transition: all .3s ease-in-out;
 }
 
+.snow_quad{
+	position: relative;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.snow_quad1{
+	float:left;
+}
+
+.snow_quad2{
+	float:right;
+}
+
+
+
 @media (max-width: 1023px) {
   	#left{
 		height:400px;

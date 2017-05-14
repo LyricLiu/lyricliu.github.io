@@ -657,6 +657,12 @@
         window.open('http://lyricliu.com/isola_web');
     });
 
+    $("#snow").click(function() {
+        hideWrap1();
+        $('#p-wrap5').show();
+        $('iframe').attr("src", "./pages/snow.html");
+    });
+
     $("#superhero").click(function() {
         hideWrap1();
         $('#p-wrap5').show();
