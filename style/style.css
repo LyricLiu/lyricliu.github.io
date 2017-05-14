@@ -750,7 +750,7 @@ h1 {
     color: #5f576e;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     font-size: 1.8em;
 }
 
@@ -759,7 +759,7 @@ h1 {
     height: 300px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .w-block {
